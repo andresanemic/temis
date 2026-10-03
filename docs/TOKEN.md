@@ -2,9 +2,9 @@
 
 ## Status and RUC-D reading
 
-$TEMIS is a classic Stellar asset issued on testnet on 3 October 2026 as a mechanics experiment. The project receipts say this decision followed the tokenomics study and changed the earlier whitepaper statement that no token would be issued in v1. The issue is not evidence of an economic need: the RUC-D study found no measured economic problem that a token solved better than fees or x402.
+$TEMIS on testnet is a proof of concept for a payment method in TEMIS's lawyer marketplace, where people and lawyers would match and pay for services. The same payment could also use USDC or XLM, so $TEMIS is not the only path. The marketplace is a product direction, not built. The classic Stellar asset was issued on testnet on 3 October 2026 to test payment mechanics; this does not establish demand, a price, a sale, liquidity or a promise of value.
 
-RUC-D orders the work before tokenomics: institutional relationship, resource or flow, actors and rights, rules and authorities, proof and verifiers, architecture, then tokenomics only if a measured economic problem remains. The study treats “no token” as a valid outcome. The token was nevertheless issued in testnet because the project owner directed its creation for the MVP, explicitly as a mechanics experiment with no value, price, liquidity, sale, or promise. This distinction matters: issuance is a recorded experiment, not the study's recommendation for a production token.
+The original Not Ponzi idea is by Francisco Toro with Pablo Guzmán; the RUC-D framework behind TEMIS's economy is by Francisco Toro and Andrés Peña. RUC-D orders the work before tokenomics: institutional relationship, resource or flow, actors and rights, rules and authorities, proof and verifiers, architecture, then tokenomics last. The study treats “no token” as a valid outcome for production. The testnet asset is a payment-method proof of concept, not the study's recommendation for a production token.
 
 ## Four candidate designs in study A
 
@@ -28,14 +28,14 @@ The manifest records a total fixed supply of 100,000,000 TEMIS with seven decima
 | Liquidity reserve | 10% | 10,000,000 | Separate account; no pool or offers. A 1 TEMIS vesting demonstration was drawn from this bucket |
 | Advisers | 10% | 10,000,000 | Separate advisers account |
 | Contingency | 5% | 5,000,000 | Separate contingency account |
-| Founders | 15% | 15,000,000 | 7,500,000 each for Andrés Peña and Francisco Toro in the configuration, split 50/50 |
+| Founders | 15% | 15,000,000 | 12-month cliff, then 36 monthly claimable balances |
 | **Total** | **100%** | **100,000,000** | Fixed issue; no issuance formula based on case or dispute counts |
 
 The manifest's independently read testnet balances show the one-token demonstration outside the liquidity account and 9,999,999 TEMIS remaining there. The demonstration's early claim failed with `claimClaimableBalanceCannotClaim`; its later claim succeeded. The test confirms those transactions and does not establish a real vesting entitlement.
 
-### Founder vesting and Francisco's test slot
+### Founder vesting
 
-The test configuration starts 3 October 2026, has a 12-month cliff, then 36 monthly claimable-balance tranches through 3 September 2030. The reserve is split 50/50 between Andrés and Francisco. On testnet the two schedules are represented by 72 claimable balances. Francisco's test account is only a slot: his real tranches exist only on mainnet if he accepts them in writing. The testnet schedule does not prove his acceptance or create a mainnet allocation.
+The test configuration starts 3 October 2026, has a 12-month cliff, then 36 monthly claimable-balance tranches through 3 September 2030. On testnet the schedules are represented by 72 claimable balances. The testnet schedule does not establish a mainnet allocation.
 
 ## Technical design and observed checks
 
@@ -43,7 +43,7 @@ The test configuration starts 3 October 2026, has a 12-month cliff, then 36 mont
 - **Supply:** one fixed issue of 100,000,000.0000000 TEMIS. The manifest stores 1,000,000,000,000,000 stroops, consistent with seven decimal places.
 - **Issuer:** issuer master weight and thresholds set to zero, no additional signers. The issuer is locked after distribution.
 - **Flags:** `AUTH_REQUIRED`, `AUTH_REVOCABLE`, `AUTH_IMMUTABLE`, and `CLAWBACK_ENABLED` are all false. The experiment has no authorization gate and no clawback control.
-- **Distribution:** separate accounts for treasury, ecosystem, liquidity, advisers, contingency, Andrés, Francisco's test slot, and the test account. The manifest and testnet verifier record the balances.
+- **Distribution:** separate accounts for treasury, ecosystem, liquidity, advisers, contingency, founders, and the test account. The manifest and testnet verifier record the balances.
 - **Vesting:** claimable balances with time predicates, rather than a linear-vesting contract. The source study notes that these unlock in discrete tranches and that claiming requires a trustline.
 
 The token receipt reports an independent Horizon read confirming the locked issuer, flags, total supply, bucket balances, 72 vesting balances, and no issuer balance. These are testnet facts. They do not prove mainnet configuration or audit the future use of any bucket.
@@ -54,7 +54,7 @@ Supply must not depend on the number of disputes. A dispute-linked emission woul
 
 ## Financing study F1: alternatives and risk
 
-Study F1 recommends considering non-dilutive financing such as the Stellar Community Fund before any token sale. It describes grants and hackathon funding as alternatives to taking money in exchange for tokens. Its own warning is that selling now would conflict with the RUC-D order and with the lack of measured demand or an economic problem that fees do not solve. It also flags the risk of creating a 15% founder reserve before the treasury, ecosystem demand, and record-archive stewardship have working governance. No sale plan is implemented here.
+Study F1 recommends considering non-dilutive financing such as the Stellar Community Fund before any token sale. It describes grants and hackathon funding as alternatives to taking money in exchange for tokens. Its warning is that selling now would conflict with the RUC-D order and with the lack of evidence for live marketplace demand; the testnet payment proof of concept does not establish that demand or support a sale. It also flags the risk of creating a 15% founder reserve before the treasury, ecosystem demand, and record-archive stewardship have working governance. No sale plan is implemented here.
 
 The study's financing references, including grant amounts and program details, were consulted on 3 October 2026 in the source study and were not independently rechecked for this repository. This document does not present them as a currently available offer.
 
@@ -75,7 +75,7 @@ The cited external materials and limits are recorded in `_fuentes/estudios/B-ant
 
 ## Marketplace direction is not built
 
-The sources discuss a possible lawyer marketplace and separately examine guarantee concepts and a Vespi marketplace for workers and verifiers. They do not establish a TEMIS marketplace of lawyers and guarantors. A marketplace, professional catalog, access-control layer, coverage, and legal guarantees are not built in this MVP. TEMIS currently does not act as an insurer, judge, guarantor, DAO, or marketplace operator.
+The product direction is a marketplace where people match with lawyers and pay for their services. That marketplace, its professional catalog, and its access-control layer are not built in this MVP. The lawyer assumes the client's risk in the underlying model; the TEMIS layer only records and validates and does not act as an insurer or promise coverage. Whether an arrangement like this qualifies as insurance under Chile's DFL 251 requires review by a lawyer. TEMIS is not a judge, guarantor, DAO, or marketplace operator.
 
 ## Legal limits
 
@@ -87,9 +87,9 @@ Nothing is issued on mainnet or sold without review by a lawyer. No price, liqui
 
 ### Estado y lectura desde RUC-D
 
-$TEMIS es un activo clásico de Stellar emitido en testnet el 3 de octubre de 2026 como experimento de mecánica. Los recibos del proyecto dicen que esta decisión siguió al estudio de tokenomics y cambió la declaración anterior del whitepaper de no emitir un token en la primera versión. La emisión no demuestra una necesidad económica: el estudio RUC-D no encontró un problema económico medido que un token resolviera mejor que las tarifas o x402.
+$TEMIS en testnet es una prueba de concepto de un medio de pago para el marketplace de abogados de TEMIS, donde las personas y los abogados podrían emparejarse y pagar por servicios. El mismo pago también podría hacerse con USDC o XLM, así que $TEMIS no es el único camino. El marketplace es una dirección de producto, no está construido. El activo clásico de Stellar se emitió en testnet el 3 de octubre de 2026 para probar la mecánica de pago; esto no demuestra demanda, precio, venta, liquidez ni promesa de valor.
 
-RUC-D ordena el trabajo antes de la tokenomics: relación institucional, recurso o flujo, actores y derechos, reglas y autoridades, pruebas y verificadores, arquitectura, y solo entonces tokenomics si persiste un problema económico medido. El estudio considera válido concluir que no corresponde tener token. Aun así, se emitió en testnet porque el dueño del proyecto instruyó crear el activo para el MVP, explícitamente como experimento de mecánica sin valor, precio, liquidez, venta ni promesa. La diferencia importa: la emisión es un experimento registrado, no la recomendación del estudio para un token de producción.
+La idea original Not Ponzi es de Francisco Toro con Pablo Guzmán; el marco RUC-D detrás de la economía de TEMIS es de Francisco Toro y Andrés Peña. RUC-D ordena el trabajo antes de la tokenomics: relación institucional, recurso o flujo, actores y derechos, reglas y autoridades, pruebas y verificadores, arquitectura, y tokenomics al final. El estudio considera válido concluir que no corresponde tener token para producción. El activo de testnet es una prueba de concepto del medio de pago, no la recomendación del estudio para un token de producción.
 
 ### Cuatro diseños candidatos del estudio A
 
@@ -113,14 +113,14 @@ El manifiesto registra una oferta fija total de 100.000.000 TEMIS con siete deci
 | Reserva de liquidez | 10% | 10.000.000 | Cuenta separada; sin pool ni ofertas. Se usó 1 TEMIS para la demostración de vesting |
 | Asesores | 10% | 10.000.000 | Cuenta separada de asesores |
 | Contingencia | 5% | 5.000.000 | Cuenta separada de contingencia |
-| Fundadores | 15% | 15.000.000 | 7.500.000 para Andrés Peña y 7.500.000 para Francisco Toro en la configuración, divididos 50/50 |
+| Fundadores | 15% | 15.000.000 | Cliff de 12 meses y luego 36 balances reclamables mensuales |
 | **Total** | **100%** | **100.000.000** | Emisión fija; no hay fórmula de emisión según cantidad de casos o disputas |
 
 Los saldos de testnet leídos de forma independiente que aparecen en el manifiesto muestran el token usado en la demostración fuera de la cuenta de liquidez, con 9.999.999 TEMIS restantes allí. La reclamación temprana de demostración falló con `claimClaimableBalanceCannotClaim`; la reclamación posterior tuvo éxito. La prueba confirma esas transacciones, no un derecho real de vesting.
 
-### Vesting de fundadores y ranura de prueba de Francisco
+### Vesting de fundadores
 
-La configuración de prueba comienza el 3 de octubre de 2026, tiene un cliff de 12 meses y luego 36 tramos mensuales de balances reclamables, hasta el 3 de septiembre de 2030. La reserva se divide 50/50 entre Andrés y Francisco. En testnet, ambos calendarios se representan mediante 72 balances reclamables. La cuenta de Francisco es solo una ranura de prueba: sus tramos reales existen en mainnet únicamente si él los acepta por escrito. El calendario de testnet no prueba su aceptación ni crea una asignación en mainnet.
+La configuración de prueba comienza el 3 de octubre de 2026, tiene un cliff de 12 meses y luego 36 tramos mensuales de balances reclamables, hasta el 3 de septiembre de 2030. En testnet, los calendarios se representan mediante 72 balances reclamables. El calendario de testnet no establece una asignación en mainnet.
 
 ### Diseño técnico y comprobaciones observadas
 
@@ -128,7 +128,7 @@ La configuración de prueba comienza el 3 de octubre de 2026, tiene un cliff de 
 - **Oferta:** emisión única fija de 100.000.000,0000000 TEMIS. El manifiesto guarda 1.000.000.000.000.000 stroops, consistente con siete decimales.
 - **Emisora:** peso maestro y umbrales en cero, sin firmantes adicionales. La emisora queda bloqueada después de distribuir.
 - **Banderas:** `AUTH_REQUIRED`, `AUTH_REVOCABLE`, `AUTH_IMMUTABLE` y `CLAWBACK_ENABLED` están en falso. El experimento no tiene filtro de autorización ni control de clawback.
-- **Distribución:** cuentas separadas para tesorería, ecosistema, liquidez, asesores, contingencia, Andrés, la ranura de Francisco y la cuenta de prueba. El manifiesto y el verificador de testnet registran los saldos.
+- **Distribución:** cuentas separadas para tesorería, ecosistema, liquidez, asesores, contingencia, fundadores y la cuenta de prueba. El manifiesto y el verificador de testnet registran los saldos.
 - **Vesting:** balances reclamables con predicados de tiempo, no un contrato de vesting lineal. El estudio indica que se desbloquean en tramos discretos y que para reclamarlos se necesita una trustline.
 
 El recibo del token informa una lectura independiente desde Horizon que confirmó la emisora bloqueada, las banderas, la oferta total, los saldos de las cubetas, 72 balances de vesting y saldo cero en la emisora. Son hechos de testnet. No demuestran la configuración de mainnet ni auditan el uso futuro de ninguna cubeta.
@@ -139,7 +139,7 @@ La oferta no puede depender del número de disputas. Una emisión ligada a dispu
 
 ### Estudio F1 de financiamiento: alternativas y riesgos
 
-El estudio F1 recomienda considerar financiamiento no dilutivo, como el Stellar Community Fund, antes de cualquier venta de tokens. Describe subvenciones y fondos para hackatones como alternativas a recibir dinero a cambio de tokens. Su advertencia es que vender hoy contradice el orden RUC-D y la falta de demanda medida o de un problema económico que las tarifas no resuelvan. También señala el riesgo de crear una reserva de fundadores de 15% antes de contar con gobernanza operativa para la tesorería, la demanda del ecosistema y la custodia del archivo del historial. Aquí no se implementa ningún plan de venta.
+El estudio F1 recomienda considerar financiamiento no dilutivo, como el Stellar Community Fund, antes de cualquier venta de tokens. Describe subvenciones y fondos para hackatones como alternativas a recibir dinero a cambio de tokens. Su advertencia es que vender hoy contradice el orden RUC-D y la falta de evidencia de demanda del marketplace en vivo; la prueba de concepto del pago en testnet no demuestra esa demanda ni respalda una venta. También señala el riesgo de crear una reserva de fundadores de 15% antes de contar con gobernanza operativa para la tesorería, la demanda del ecosistema y la custodia del archivo del historial. Aquí no se implementa ningún plan de venta.
 
 Las referencias de financiamiento del estudio, incluidos montos de subvenciones y detalles de programas, se consultaron el 3 de octubre de 2026 en el estudio fuente y no se volvieron a comprobar para este repositorio. Este documento no las presenta como una oferta disponible actualmente.
 
@@ -160,10 +160,10 @@ Los materiales externos citados y sus límites se registran en `_fuentes/estudio
 
 ### La dirección marketplace no está construida
 
-Las fuentes analizan un posible marketplace de abogados y, por separado, conceptos de garantía y un marketplace de trabajadores y verificadores de Vespi. No establecen que exista un marketplace TEMIS de abogados y garantes. Un marketplace, catálogo profesional, capa de control de acceso, cobertura y garantías jurídicas no están construidos en este MVP. TEMIS no actúa hoy como aseguradora, juez, garante, DAO ni operador de marketplace.
+La dirección de producto es un marketplace donde las personas se emparejan con abogados y pagan por sus servicios. El marketplace, su catálogo profesional y su capa de control de acceso no están construidos en este MVP. En el modelo de fondo, la persona abogada asume el riesgo del cliente; la capa TEMIS solo registra y valida y no actúa como aseguradora ni promete cobertura. Si un acuerdo de este tipo califica como seguro bajo el DFL 251 de Chile, lo debe revisar una persona abogada. TEMIS no es juez, garante, DAO ni operador del marketplace.
 
 ### Límites legales
 
 Los estudios de tokenomics identifican preguntas jurídicas abiertas en Chile y otras jurisdicciones, entre ellas el posible tratamiento como valor, y las normas de consumo, tributarias, financieras y de seguros. Las fuentes no contienen una opinión jurídica de una persona competente. La emisión en testnet no resuelve la clasificación de un activo futuro en mainnet ni de una venta.
 
-No se emite nada en mainnet ni se vende sin revisión de una persona abogada. Este experimento no promete ni implica precio, liquidez, rendimiento, listado en una plataforma de intercambio, mercado ni valor de inversión.
+No se emite nada en mainnet ni se vende sin revisión de una persona abogada. El token no tiene precio, venta ni liquidez y no promete valor, rendimiento, listado en una plataforma de intercambio, mercado ni valor de inversión.
