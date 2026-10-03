@@ -70,6 +70,29 @@ Public inputs named by the sources are: the complete Stellar history for the anc
 
 This guide follows the supplied TEMIS whitepaper and receipts for milestone outcomes (`fulfilled`, `fulfilled_unconfirmed`, `challenged`, `unfulfilled`), chain behavior, signatures, anchors, x402, and reconstruction. The whitepaper and receipts do not define a stable public catalogue of exactly ten named status values. Therefore this document does not invent one; implementation-level validation statuses are treated as distinct from the milestone outcomes above.
 
+## A narrated example, from agreement to review
+
+The following scenario is fictional and illustrates the specified workflow. It is not a transcript from a running TEMIS interface. The outcome labels are the labels used by the documented record; no extra fields or command output are implied.
+
+Two parties agree that Party A will deliver a design package and that Party B will acknowledge receipt. A legal professional writes the deadline and the evidence requirement into the agreement. Both parties keep the off-chain document and sign the same TEMIS-CF-1 digest. The network receives only the digest anchor.
+
+```text
+Illustrative record · fictional data
+Agreement version: signed by Party A and Party B
+Milestone: design package delivery
+Evidence reference: delivery receipt
+```
+
+Party A then signs a delivery declaration. If Party B confirms, the documented close is `fulfilled`. If Party B remains silent, silence is not represented as Party B's transaction; the operator can record `fulfilled_unconfirmed`. If Party B challenges the declaration, that records disagreement and does not resolve it. A correction adds a new line that annuls an earlier line while leaving the original in the history.
+
+```text
+Both parties confirm: fulfilled
+No response from Party B: fulfilled_unconfirmed
+Party B challenges: challenged
+```
+
+These are concise illustrations of the documented states, not raw tool output. The technical verifier can compare supplied digests and records. An independent reviewer needs the complete account history, the published rules and a party's copy to reconstruct and compare. Neither step decides whether delivery was legally sufficient or whether the evidence is true.
+
 ## Español
 
 ### Alcance
@@ -141,3 +164,26 @@ Los datos públicos nombrados por las fuentes son: el historial completo de Stel
 ### Fuentes y nombres de estatus
 
 Esta guía sigue el whitepaper y los recibos de TEMIS suministrados en cuanto a resultados de hitos (`fulfilled`, `fulfilled_unconfirmed`, `challenged`, `unfulfilled`), comportamiento de la cadena, firmas, anclajes, x402 y reconstrucción. El whitepaper y los recibos no definen un catálogo público estable de exactamente diez estatus con nombre. Por eso no invento uno; los estados internos de validación se distinguen de los resultados de hitos anteriores.
+
+### Ejemplo narrado: del acuerdo a la revisión
+
+El escenario es ficticio e ilustra el recorrido especificado. No es una transcripción de una interfaz TEMIS en operación. Las etiquetas corresponden a los estados documentados; no se simulan campos ni salidas de comandos.
+
+Dos partes acuerdan que la Parte A entregará un paquete de diseño y que la Parte B confirmará la recepción. Una persona abogada escribe el plazo y la evidencia exigida en el acuerdo. Ambas partes conservan el documento fuera de la cadena y firman el mismo digest TEMIS-CF-1. La red recibe solo el anclaje del digest.
+
+```text
+Registro ilustrativo · datos ficticios
+Versión del acuerdo: firmada por la Parte A y la Parte B
+Hito: entrega de paquete de diseño
+Referencia de evidencia: comprobante de entrega
+```
+
+Después, la Parte A firma una declaración de entrega. Si la Parte B confirma, el cierre documentado es `fulfilled`. Si guarda silencio, ese silencio no se representa como una transacción de la Parte B; el operador puede registrar `fulfilled_unconfirmed`. Si la Parte B impugna la declaración, queda anotado el desacuerdo, pero no se resuelve. Una corrección agrega una línea que anula una anterior y deja la original en el historial.
+
+```text
+Ambas partes confirman: fulfilled
+La Parte B no responde: fulfilled_unconfirmed
+La Parte B impugna: challenged
+```
+
+Son ejemplos breves de los estados documentados, no salida cruda de una herramienta. El verificador técnico puede comparar digests y registros recibidos. Un tercero independiente necesita el historial completo de la cuenta, las reglas publicadas y una copia de una parte para reconstruir y comparar. Ninguno de esos pasos decide si la entrega fue jurídicamente suficiente o si la evidencia es verdadera.

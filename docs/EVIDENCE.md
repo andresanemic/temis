@@ -12,7 +12,7 @@ The complete history run hashes (including the first and corrected run) appear i
 
 ## Testnet transactions from TESTNET_EVIDENCE.md
 
-Every transaction hash in `_fuentes/TESTNET_EVIDENCE.md` is listed below in its source group, with a full direct Horizon link. The source file states 50 successful transactions across the groups below.
+All 50 reported successful testnet transaction hashes are listed below in their groups, with full direct Horizon links.
 
 ### TEMIS: full agreement lifecycle, first run (15)
 
@@ -86,7 +86,7 @@ The testnet file reports that the first Vespi payment run returned `not_verified
 
 ## Token issuance transactions
 
-`_fuentes/token.json` contains 102 unique transaction hashes for the $TEMIS testnet experiment, including the claimable-balance demonstration. The complete set is reproduced in manifest order below. Horizon links allow independent inspection; the local manifest and receipt identify the testnet issuer and verification results. The manifest does not map every hash to a named allocation step, so this document does not assign transaction-level meanings beyond the explicitly named claim tests in the receipt.
+The $TEMIS testnet experiment records 102 unique transaction hashes, including the claimable-balance demonstration. The complete set is reproduced below in manifest order. Horizon links allow independent inspection; the testnet manifest and receipt identify the issuer and verification results. The manifest does not map every hash to a named allocation step, so this document does not assign transaction-level meanings beyond the claim tests named in the receipt.
 
 - [561a4a96761acc2ee0f562a31cba8f308087cafc543b609c2deb7fe2c5fea6c6](https://horizon-testnet.stellar.org/transactions/561a4a96761acc2ee0f562a31cba8f308087cafc543b609c2deb7fe2c5fea6c6)
 - [db13b61fe79431284bdb5c786c950c3df3cc374aa207ab495552415e13c9478b](https://horizon-testnet.stellar.org/transactions/db13b61fe79431284bdb5c786c950c3df3cc374aa207ab495552415e13c9478b)
@@ -205,6 +205,12 @@ The early claim demonstration failed as expected with `claimClaimableBalanceCann
 
 The 153-test count is the final suite count reported in the supplied Stage 5 receipt. Earlier stage counts are historical suite sizes, not separate suites to add together.
 
+## Suite count and the shared-kernel pin
+
+TEMIS's latest supplied receipt reports 153 tests and zero failures. This count is the TEMIS project suite; it must not be read as a combined pass count for all functional projects built on Vespi.
+
+The [Vespi project overview](https://github.com/andresanemic/vespi) reports that nine of its ten functional project suites were run against an earlier kernel cut, `54c20c7`. Those projects pin the kernel they consume by digest. A pin is an intentional compatibility check: if the kernel changes, a project does not silently treat the changed kernel as the one it previously tested. The overview says those suites need an explicit re-pin against kernel `0.1.3`; until then, part of their suites fails because the recorded digest no longer matches. This is a stale compatibility reference, not evidence that the TEMIS suite's 153 reported tests failed. Re-pinning and rerunning those other project suites are separate work.
+
 ## How to recheck a transaction
 
 1. Open a full hash link above in Stellar Horizon testnet.
@@ -226,7 +232,7 @@ Los hashes completos de la corrida de historial, incluidos el primer y el segund
 
 ### Transacciones de testnet de TESTNET_EVIDENCE.md
 
-Los 50 hashes de transacción de `_fuentes/TESTNET_EVIDENCE.md` están en la lista anterior, agrupados según su fuente y con enlaces directos completos a Horizon.
+Los 50 hashes de transacciones exitosas informadas para testnet están en la lista anterior, agrupados y con enlaces directos completos a Horizon.
 
 - TEMIS, primer ciclo completo: 15 transacciones.
 - TEMIS, ciclo corregido y comparación independiente de estatus: 23 transacciones.
@@ -239,7 +245,7 @@ El archivo de testnet informa que el primer pago de Vespi devolvió `not_verifie
 
 ### Transacciones de emisión del token
 
-`_fuentes/token.json` contiene 102 hashes de transacción únicos para el experimento $TEMIS en testnet, incluida la demostración de balances reclamables. El conjunto completo está reproducido antes de esta sección y conserva el orden del manifiesto. Los enlaces de Horizon permiten revisar cada hash; el manifiesto y el recibo local identifican la emisora de testnet y los resultados de verificación. El manifiesto no asocia cada hash a un paso de asignación nombrado, por lo que no asigno significados individuales fuera de las pruebas de reclamación que identifica el recibo.
+El experimento $TEMIS en testnet registra 102 hashes de transacción únicos, incluida la demostración de balances reclamables. El conjunto completo está reproducido antes de esta sección y conserva el orden del manifiesto. Los enlaces de Horizon permiten revisar cada hash; el manifiesto y el recibo identifican la emisora de testnet y los resultados de verificación. El manifiesto no asocia cada hash a un paso de asignación nombrado, por lo que no asigno significados individuales fuera de las pruebas de reclamación identificadas en el recibo.
 
 La reclamación temprana de demostración falló como se esperaba con `claimClaimableBalanceCannotClaim`; la posterior tuvo éxito. El recibo fuente informa una verificación independiente, solo de lectura de Horizon, de la emisora bloqueada, las banderas, la oferta total, los saldos de cuentas, los balances de vesting y el saldo cero de la emisora. Consulta [Token](TOKEN.md) para ver la asignación y la mecánica.
 
@@ -254,6 +260,12 @@ La reclamación temprana de demostración falló como se esperaba con `claimClai
 | Tramo 5: experimento del token $TEMIS | 102 hashes de transacciones en el manifiesto; verificación independiente en Horizon informó emisora bloqueada, banderas desactivadas, oferta de 100.000.000, saldos por cubeta y 72 balances de vesting; suite del proyecto de 153 pruebas, cero fallas | Solo testnet, datos de fantasía, sin mercado ni venta; el vesting de testnet no establece una asignación en mainnet; no se publicó `stellar.toml` |
 
 La cifra de 153 pruebas es la última cifra de suite que informa el recibo del tramo 5. Los recuentos de tramos anteriores son tamaños históricos de la suite, no pruebas separadas que deban sumarse.
+
+### Cifra de suite y referencia fijada del kernel compartido
+
+El recibo más reciente suministrado para TEMIS informa 153 pruebas y cero fallas. Esta cifra corresponde a la suite del proyecto TEMIS; no debe leerse como un total combinado de aprobaciones para todos los proyectos funcionales construidos sobre Vespi.
+
+El [panorama de proyectos de Vespi](https://github.com/andresanemic/vespi) informa que nueve de sus diez suites funcionales se ejecutaron contra un corte anterior del kernel, `54c20c7`. Esos proyectos fijan por digest el kernel que consumen. La referencia es un control deliberado de compatibilidad: si el kernel cambia, el proyecto no trata silenciosamente el kernel nuevo como si fuera el que probó antes. El panorama indica que esas suites necesitan fijar de forma explícita la versión `0.1.3`; hasta que lo hagan, parte de sus pruebas falla porque el digest registrado ya no coincide. Es una referencia de compatibilidad desactualizada, no evidencia de que hayan fallado las 153 pruebas informadas para TEMIS. Actualizar esa referencia y volver a ejecutar las otras suites son trabajos separados.
 
 ### Cómo volver a comprobar una transacción
 

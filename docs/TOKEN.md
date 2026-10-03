@@ -71,7 +71,7 @@ Study B is a research synthesis, not a new audit of the projects it discusses. I
 - **RetroPGF and reputation systems:** the study reports that funding based only on popularity or metrics can be distorted and that non-transferable reputation is an alternative to a tradable score.
 - **Stellar examples:** the study contrasts a utility token with a purpose-bound regulated asset such as BENJI; it emphasizes an identified issuer and a real off-chain product rather than speculative issuance.
 
-The cited external materials and limits are recorded in `_fuentes/estudios/B-antecedentes.md`; partial or unverified sources remain qualified as such. These comparisons are lessons proposed by the study, not proof that any mechanism will work for TEMIS.
+The study's external references and their limits are kept with the research record; partial or unverified sources remain qualified as such. These comparisons are lessons proposed by the study, not proof that any mechanism will work for TEMIS.
 
 ## Marketplace direction is not built
 
@@ -156,7 +156,7 @@ El estudio B es una síntesis de investigación, no una auditoría nueva de los 
 - **RetroPGF y sistemas de reputación:** el estudio informa que el financiamiento basado solo en popularidad o métricas puede distorsionarse y que la reputación intransferible es una alternativa a un puntaje negociable.
 - **Ejemplos de Stellar:** el estudio contrasta un token de utilidad con un activo regulado de propósito definido como BENJI; destaca un emisor identificado y un producto real fuera de la cadena en vez de una emisión especulativa.
 
-Los materiales externos citados y sus límites se registran en `_fuentes/estudios/B-antecedentes.md`; las fuentes parciales o no verificadas se mantienen calificadas. Estas comparaciones son lecciones propuestas por el estudio, no pruebas de que un mecanismo funcione para TEMIS.
+Las referencias externas del estudio y sus límites se conservan en el registro de investigación; las fuentes parciales o no verificadas se mantienen calificadas. Estas comparaciones son lecciones propuestas por el estudio, no pruebas de que un mecanismo funcione para TEMIS.
 
 ### La dirección marketplace no está construida
 
