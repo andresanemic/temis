@@ -10,7 +10,10 @@
   <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/built_with-Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Lore Plugin"></a>
 </p>
 
-<p align="center"><b>Un acuerdo no termina al firmarse. TEMIS deja a la vista qué pasó en cada hito y permite que un tercero reconstruya el registro.</b><br><br>Las partes firman la misma versión; cada evento se añade al historial y su digest se ancla en Stellar testnet. El cuerpo del acuerdo y sus pruebas se conservan fuera de la cadena.</p>
+<p align="center"><b>TEMIS</b> — two people sign an agreement and later cannot tell who did what.<br>
+Each party acts only within what it was allowed, and every step is checked and recorded. Evidence: 22/22 states rebuilt from Horizon. Fictional data on Stellar testnet.<br>
+<b>TEMIS</b> — dos personas firman un acuerdo y después no saben quién cumplió qué.<br>
+Cada parte actúa solo dentro de lo permitido, y cada paso se comprueba y queda registrado. Evidencia: 22/22 estados reconstruidos desde Horizon. Datos ficticios en Stellar testnet.</p>
 
 <p align="center"><b>La unidad no es el contrato. La unidad es el hito, y lo que cada parte dejó registrado sobre él.</b></p>
 
