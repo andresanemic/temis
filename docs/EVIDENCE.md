@@ -205,11 +205,11 @@ The early claim demonstration failed as expected with `claimClaimableBalanceCann
 
 The 153-test count is the final suite count reported in the supplied Stage 5 receipt. Earlier stage counts are historical suite sizes, not separate suites to add together.
 
-## Suite count and the shared-kernel pin
+## Suite count and the kernel
 
 TEMIS's latest supplied receipt reports 153 tests and zero failures. This count is the TEMIS project suite; it must not be read as a combined pass count for all functional projects built on Vespi.
 
-The [Vespi project overview](https://github.com/andresanemic/vespi) reports that nine of its ten functional project suites were run against an earlier kernel cut, `54c20c7`. Those projects pin the kernel they consume by digest. A pin is an intentional compatibility check: if the kernel changes, a project does not silently treat the changed kernel as the one it previously tested. The overview says those suites need an explicit re-pin against kernel `0.1.3`; until then, part of their suites fails because the recorded digest no longer matches. This is a stale compatibility reference, not evidence that the TEMIS suite's 153 reported tests failed. Re-pinning and rerunning those other project suites are separate work.
+TEMIS does not consume the Vespi kernel, so its suite does not depend on a kernel pin. The other functional projects of the Vespi set were red on 2026-10-03 because they were pinned to an earlier kernel cut; they have since been re-pinned to kernel 0.1.5 and their own evidence pages report the new runs. None of that affects the 153 reported tests of TEMIS.
 
 ## How to recheck a transaction
 
@@ -261,11 +261,11 @@ La reclamación temprana de demostración falló como se esperaba con `claimClai
 
 La cifra de 153 pruebas es la última cifra de suite que informa el recibo del tramo 5. Los recuentos de tramos anteriores son tamaños históricos de la suite, no pruebas separadas que deban sumarse.
 
-### Cifra de suite y referencia fijada del kernel compartido
+### Cifra de suite y kernel
 
 El recibo más reciente suministrado para TEMIS informa 153 pruebas y cero fallas. Esta cifra corresponde a la suite del proyecto TEMIS; no debe leerse como un total combinado de aprobaciones para todos los proyectos funcionales construidos sobre Vespi.
 
-El [panorama de proyectos de Vespi](https://github.com/andresanemic/vespi) informa que nueve de sus diez suites funcionales se ejecutaron contra un corte anterior del kernel, `54c20c7`. Esos proyectos fijan por digest el kernel que consumen. La referencia es un control deliberado de compatibilidad: si el kernel cambia, el proyecto no trata silenciosamente el kernel nuevo como si fuera el que probó antes. El panorama indica que esas suites necesitan fijar de forma explícita la versión `0.1.3`; hasta que lo hagan, parte de sus pruebas falla porque el digest registrado ya no coincide. Es una referencia de compatibilidad desactualizada, no evidencia de que hayan fallado las 153 pruebas informadas para TEMIS. Actualizar esa referencia y volver a ejecutar las otras suites son trabajos separados.
+TEMIS no consume el kernel de Vespi, así que su suite no depende de una fijación del kernel. Los otros proyectos funcionales del conjunto de Vespi estaban en rojo el 2026-10-03 porque estaban fijados a un corte anterior del kernel; desde entonces se fijaron al kernel 0.1.5 y sus propias páginas de evidencia informan las nuevas corridas. Nada de eso afecta las 153 pruebas informadas para TEMIS.
 
 ### Cómo volver a comprobar una transacción
 

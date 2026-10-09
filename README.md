@@ -7,8 +7,7 @@
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-review--only-D7B698?style=for-the-badge&labelColor=07111A" alt="License: review only"></a>
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-153_tests-D7B698?style=for-the-badge&labelColor=07111A" alt="Suite: 153 tests"></a>
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/testnet-evidence_open-E0C170?style=for-the-badge&labelColor=07111A" alt="Testnet evidence open"></a>
-  <a href="https://github.com/andresanemic/vespi"><img src="https://img.shields.io/badge/built_with-Vespi_%C2%B7_Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Vespi and Lore Plugin"></a>
-  <a href="https://github.com/andresanemic/vespi/tree/ed559e83c976dd6e6a379a5510db776206f670b4"><img src="https://img.shields.io/badge/kernel-0.1.5_release-ed559e8?style=for-the-badge&labelColor=07111A&color=E0C170" alt="Kernel: 0.1.5 release (commit ed559e8)"></a>
+  <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/built_with-Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Lore Plugin"></a>
 </p>
 
 <p align="center"><b>Un acuerdo no termina al firmarse. TEMIS deja a la vista qué pasó en cada hito y permite que un tercero reconstruya el registro.</b><br><br>Las partes firman la misma versión; cada evento se añade al historial y su digest se ancla en Stellar testnet. El cuerpo del acuerdo y sus pruebas se conservan fuera de la cadena.</p>
@@ -142,7 +141,7 @@ The product direction is a marketplace, a “Tinder for lawyers”: people and l
 
 ## TEMIS, Vespi and Lore Plugin
 
-[Lore Plugin](https://github.com/andresanemic/lore-plugin) supplies project criteria and the coordinator's method. [Vespi](https://github.com/andresanemic/vespi) supplies the operation kernel TEMIS uses: bounded authority, receipts, separate execution and verification, and x402 payment mechanics. TEMIS adds agreement-specific rules such as TEMIS-CF-1, signatures, milestone states, append-only corrections and Stellar anchors. It does not treat the generic kernel's JSON canonicalizer as the agreement's canonical form. The kernel version is pinned by digest so a change in the shared kernel is visible and requires an explicit compatibility decision.
+[Lore Plugin](https://github.com/andresanemic/lore-plugin) supplies project criteria and the coordinator’s method; TEMIS was built with that method, and its agreement and criterion live in the project. TEMIS does **not** run on the [Vespi](https://github.com/andresanemic/vespi) kernel: its append-only record, signatures, TEMIS-CF-1 canonical form, milestone states and Stellar testnet anchors are TEMIS’s own code, and its source says so. The kernel was read as a design reference (the project’s step-zero notes cite it by file and line), and TEMIS uses the same public x402 packages that Vespi’s x402 reference bridge uses; neither makes TEMIS a consumer of the kernel’s operations, authority or receipts. Whether TEMIS should consume the kernel’s receipts and pubnet-pending anchors is an open decision that the current suite does not exercise.
 
 ## What is not built or verified
 
@@ -293,7 +292,7 @@ La dirección del producto es un marketplace, un «Tinder de abogados»: las per
 
 ## TEMIS, Vespi y Lore Plugin
 
-[Lore Plugin](https://github.com/andresanemic/lore-plugin) aporta el criterio del proyecto y el método del coordinador. [Vespi](https://github.com/andresanemic/vespi) aporta el kernel de operaciones que TEMIS utiliza: autoridad acotada, recibos, separación entre ejecución y verificación, y mecánica de pagos x402. TEMIS añade reglas propias de acuerdos: TEMIS-CF-1, firmas, estados de hitos, correcciones de solo anexado y anclajes en Stellar. No trata el canonicalizador JSON genérico del kernel como la forma canónica de los acuerdos. La versión del kernel se fija por digest para que un cambio en el núcleo compartido quede visible y requiera una decisión explícita de compatibilidad.
+[Lore Plugin](https://github.com/andresanemic/lore-plugin) aporta el criterio del proyecto y el método del coordinador; TEMIS se construyó con ese método, y su acuerdo y su criterio viven en el proyecto. TEMIS **no** corre sobre el kernel de [Vespi](https://github.com/andresanemic/vespi): su registro de solo anexado, las firmas, la forma canónica TEMIS-CF-1, los estados de hitos y los anclajes en Stellar testnet son código propio de TEMIS, y su fuente lo dice. El kernel se leyó como referencia de diseño (las notas del paso cero del proyecto lo citan con archivo y línea), y TEMIS usa los mismos paquetes públicos de x402 que usa el puente de referencia x402 de Vespi; ninguna de las dos cosas hace de TEMIS un consumidor de las operaciones, la autoridad o los recibos del kernel. Si TEMIS debe consumir los recibos del kernel y sus anclas pubnet pendientes es una decisión abierta que la suite actual no ejercita.
 
 ## Qué no está construido ni verificado
 
