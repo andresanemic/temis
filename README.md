@@ -167,8 +167,6 @@ This public repository contains documentation, testnet evidence, token records a
 <details>
 <summary><b>Leer en español</b></summary>
 
-<p align="center"><b>Postulamos a la hackatón Find Your Way y planeamos participar en Meridian.</b></p>
-
 <a id="espanol"></a>
 
 <p align="center"><b>TEMIS</b> — dos personas firman un acuerdo y después no saben quién cumplió qué.<br>
