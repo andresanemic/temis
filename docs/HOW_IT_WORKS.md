@@ -93,13 +93,13 @@ Party B challenges: challenged
 
 These are concise illustrations of the documented states, not raw tool output. The technical verifier can compare supplied digests and records. An independent reviewer needs the complete account history, the published rules and a party's copy to reconstruct and compare. Neither step decides whether delivery was legally sufficient or whether the evidence is true.
 
-## Español
+# Español
 
-### Alcance
+## Alcance
 
 TEMIS se describe como un registro versionado para acuerdos bilaterales organizados por hitos. Las fuentes distinguen el recorrido previsto de la implementación limitada que se probó en testnet. El MVP cubrió las pruebas 0 a 8 con datos de fantasía; no presta un servicio jurídico en operación.
 
-### Participantes y derechos
+## Participantes y derechos
 
 | Participante | Función prevista | Qué puede mostrar el registro | Límite |
 | --- | --- | --- | --- |
@@ -111,13 +111,13 @@ TEMIS se describe como un registro versionado para acuerdos bilaterales organiza
 | Facilitador x402 | Verificar la autorización y enviar una liquidación | El resultado de liquidación informado por el facilitador y el ledger | Liquidar no significa que el destinatario esté satisfecho |
 | Tercero independiente | Reconstruir desde el historial público y comparar una copia | La secuencia recuperable del archivo completo y de la especificación | Requiere un archivo íntegro del historial y una copia para cotejar |
 
-### Registro canónico: TEMIS-CF-1
+## Registro canónico: TEMIS-CF-1
 
 El cuerpo del acuerdo queda fuera de la cadena, en copias de las partes y del operador. Las reglas de canonicalización permiten que implementaciones independientes calculen el mismo digest a partir del mismo documento: claves JSON ordenadas por sus bytes UTF-8, rechazo de claves duplicadas, texto normalizado a NFC, eliminación de escapes innecesarios, números de punto fijo con escala declarada y SHA-256. El digest tiene 32 bytes y cabe en `MEMO_HASH` de Stellar. El whitepaper indica que la forma canónica tiene vectores de prueba. El canonicalizador JSON genérico del kernel de Vespi no es la forma TEMIS-CF-1.
 
 Cada versión tiene su propio digest. Una firma se aplica a un digest, no al nombre mutable de un documento. El cuerpo del acuerdo y sus anexos probatorios no se publican en transacciones de Stellar.
 
-### Recorrido: dos partes y un hito
+## Recorrido: dos partes y un hito
 
 Ejemplo: la Parte A acuerda entregar un paquete de diseño a la Parte B antes de una fecha determinada, y el acuerdo exige un comprobante de entrega. Es un ejemplo ilustrativo del recorrido descrito, no un cliente real ni un acuerdo de testnet.
 
@@ -131,7 +131,7 @@ Ejemplo: la Parte A acuerda entregar un paquete de diseño a la Parte B antes de
 8. **Registro de incumplimiento o controversia.** Un hito vencido puede registrarse como incumplido junto con la declaración y evidencia de respaldo. Las partes pueden abrir una controversia con quién la activó, el profesional designado y una declaración de conflicto. TEMIS registra el evento; no exige cumplimiento, acusa, juzga, cobra ni paga.
 9. **Reconstrucción.** Un tercero consulta el archivo completo del historial de la cuenta ancla, identifica las transacciones y los memo hashes pertinentes, aplica las reglas publicadas de canonicalización y cadena, y compara las líneas y cuerpos reconstruidos con la copia de una parte. Debe informar las diferencias. Necesita el historial completo; una página del explorador no basta.
 
-### Reglas de la cadena
+## Reglas de la cadena
 
 - Una línea tiene un cuerpo canónico y digest, una referencia a una línea anterior cuando se exige, firmas, tipo de evento, identificadores del acuerdo y hito, versión y referencia de anclaje según el formato del registro.
 - La clave de orden es la secuencia aceptada de la cuenta ancla, y se usa la posición en el ledger cuando está disponible para ordenar transacciones dentro de un mismo ledger. El orden histórico de escritura no prueba causalidad ni legitimidad.
@@ -142,7 +142,7 @@ Ejemplo: la Parte A acuerda entregar un paquete de diseño a la Parte B antes de
 - Una controversia no cambia el estado del hito. El plazo no se modela como evento automático del ledger; `fulfilled_unconfirmed` es un cierre que registra el operador cuando no hay respuesta.
 - Una sola cuenta ancla entrega una secuencia total, pero su clave permite escribir anulaciones engañosas. Las firmas de las partes no impiden una anulación del operador con firma falsa. Para rotar la clave se necesita una línea firmada por la clave anterior y la nueva; si se pierde la anterior, la continuidad queda interrumpida y debe mostrarse.
 
-### Pagos x402: recorrido, tabla, garantías y límites
+## Pagos x402: recorrido, tabla, garantías y límites
 
 x402 paga por una capacidad técnica, no por el acuerdo ni por derechos jurídicos. El esquema `exact` de Stellar descrito usa activos SEP-41; no admite activos clásicos de Stellar. El recorrido predeterminado documentado usa autorización patrocinada: el cliente firma una autorización con vencimiento por número de ledger y un facilitador aporta las tasas, reconstruye y envía la transacción. La firma de la transacción completa aparece como trabajo futuro en la implementación de referencia citada y no se probó aquí.
 
@@ -157,15 +157,15 @@ x402 paga por una capacidad técnica, no por el acuerdo ni por derechos jurídic
 
 El recibo de idempotencia en testnet informa una llamada al facilitador, un abono real y un reintento de entrega sin segundo cobro. Un reenvío directo del mismo payload a `/settle` fue rechazado por simulación. El escenario se ejecutó una vez con un facilitador y datos de fantasía. No valida el caso no probado en que la entrega ocurre y después falla la liquidación, todas las carreras posibles ni la confiabilidad en producción. La tabla durable cobra una vez la misma obligación registrada en el recorrido probado; los estados `incierto` o `conflict` son límites explícitos, no una promesa de recuperación automática.
 
-### Qué puede verificar un tercero
+## Qué puede verificar un tercero
 
 Los datos públicos nombrados por las fuentes son: el historial completo de Stellar para la cuenta ancla; las transacciones del ledger y sus valores `MEMO_HASH`; las especificaciones publicadas de canonicalización y cadena; los digests del acuerdo y de las líneas; las firmas y claves públicas; y una copia fuera de la cadena para cotejar. El recibo integrado informa 22 de 22 estatus coincidentes con una reconstrucción independiente y resultados coincidentes para tres hitos en una corrida. También indica que una de las 22 firmas era de un tercero ajeno y no se contó como firma de una parte. Esa corrida no prueba identidad civil, disponibilidad del archivo completo, titularidad de la cuenta más allá de lo declarado en el acuerdo, verdad de la evidencia, efecto jurídico ni corrección para cualquier entrada.
 
-### Fuentes y nombres de estatus
+## Fuentes y nombres de estatus
 
 Esta guía sigue el whitepaper y los recibos de TEMIS suministrados en cuanto a resultados de hitos (`fulfilled`, `fulfilled_unconfirmed`, `challenged`, `unfulfilled`), comportamiento de la cadena, firmas, anclajes, x402 y reconstrucción. El whitepaper y los recibos no definen un catálogo público estable de exactamente diez estatus con nombre. Por eso no invento uno; los estados internos de validación se distinguen de los resultados de hitos anteriores.
 
-### Ejemplo narrado: del acuerdo a la revisión
+## Ejemplo narrado: del acuerdo a la revisión
 
 El escenario es ficticio e ilustra el recorrido especificado. No es una transcripción de una interfaz TEMIS en operación. Las etiquetas corresponden a los estados documentados; no se simulan campos ni salidas de comandos.
 

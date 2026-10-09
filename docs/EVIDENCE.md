@@ -218,19 +218,19 @@ TEMIS does not consume the Vespi kernel, so its suite does not depend on a kerne
 3. For agreement records, compare each `MEMO_HASH` to the digest in the corresponding local receipt and apply the canonicalization and first-write-wins rules in [How it works](HOW_IT_WORKS.md). Horizon shows the ledger transaction; reconstructing a complete record requires the full history archive and off-chain copy.
 4. For token transactions, use the manifest and the named testnet issuer. Recompute total supply from account balances and verify issuer weights, flags, and claimable-balance conditions. The independent readback described by the receipt was already recorded on 3 October 2026; it was not rerun while building this public documentation.
 
-## Español
+# Español
 
-### Cómo leer esta evidencia
+## Cómo leer esta evidencia
 
 Los enlaces de transacciones anteriores copian los hashes completos de las fuentes de testnet y del manifiesto del token. Apuntan a Stellar Horizon testnet. No se hicieron consultas de red al preparar este repositorio. Las fuentes indican que las corridas de acuerdos TEMIS usaron datos de fantasía y no dinero real. El historial de testnet puede reiniciarse; los recibos locales y los hashes conservan el registro informado.
 
-### Ciclo del acuerdo y reconstrucción independiente
+## Ciclo del acuerdo y reconstrucción independiente
 
 Los recibos describen dos corridas del ciclo completo. La primera tuvo 15 transacciones exitosas. La corrida corregida tuvo 23 transacciones, 22 con `MEMO_HASH`, entre los ledgers 4989043 y 4989065. En esta última, las fuentes informan h1 cumplido después de corregirse con una anulación, h2 cumplido no confirmado y h3 impugnado con una escritura perdedora. Una reconstrucción independiente coincidió en 22 de 22 estatus y en los tres resultados de hito con la implementación. El tercero también encontró un defecto al comparar una copia de parte con el historial si faltaban cuerpos o estaban alterados; se corrigió con pruebas. Una firma de las 22 era de un tercero ajeno y no se contó como firma de una parte. Es una corrida, no una conclusión amplia de confiabilidad ni de validez jurídica.
 
 Los hashes completos de la corrida de historial, incluidos el primer y el segundo intento, están en los grupos anteriores. Abre cada transacción en Horizon para inspeccionar su resultado, ledger, memo, cuenta de origen y operaciones.
 
-### Transacciones de testnet de TESTNET_EVIDENCE.md
+## Transacciones de testnet de TESTNET_EVIDENCE.md
 
 Los 50 hashes de transacciones exitosas informadas para testnet están en la lista anterior, agrupados y con enlaces directos completos a Horizon.
 
@@ -243,13 +243,13 @@ Los 50 hashes de transacciones exitosas informadas para testnet están en la lis
 
 El archivo de testnet informa que el primer pago de Vespi devolvió `not_verified` por un error del proyecto y que una corrida posterior se verificó. Son ejemplos del kernel Vespi y de pagos, no un servicio jurídico TEMIS. La fuente aclara que no demuestran uso en mainnet, preparación para producción, varios facilitadores ni más de un pagador.
 
-### Transacciones de emisión del token
+## Transacciones de emisión del token
 
 El experimento $TEMIS en testnet registra 102 hashes de transacción únicos, incluida la demostración de balances reclamables. El conjunto completo está reproducido antes de esta sección y conserva el orden del manifiesto. Los enlaces de Horizon permiten revisar cada hash; el manifiesto y el recibo identifican la emisora de testnet y los resultados de verificación. El manifiesto no asocia cada hash a un paso de asignación nombrado, por lo que no asigno significados individuales fuera de las pruebas de reclamación identificadas en el recibo.
 
 La reclamación temprana de demostración falló como se esperaba con `claimClaimableBalanceCannotClaim`; la posterior tuvo éxito. El recibo fuente informa una verificación independiente, solo de lectura de Horizon, de la emisora bloqueada, las banderas, la oferta total, los saldos de cuentas, los balances de vesting y el saldo cero de la emisora. Consulta [Token](TOKEN.md) para ver la asignación y la mecánica.
 
-### Cinco recibos del proyecto
+## Cinco recibos del proyecto
 
 | Recibo | Resultado informado | Límites consignados en el recibo |
 | --- | --- | --- |
@@ -261,13 +261,13 @@ La reclamación temprana de demostración falló como se esperaba con `claimClai
 
 La cifra de 153 pruebas es la última cifra de suite que informa el recibo del tramo 5. Los recuentos de tramos anteriores son tamaños históricos de la suite, no pruebas separadas que deban sumarse.
 
-### Cifra de suite y kernel
+## Cifra de suite y kernel
 
 El recibo más reciente suministrado para TEMIS informa 153 pruebas y cero fallas. Esta cifra corresponde a la suite del proyecto TEMIS; no debe leerse como un total combinado de aprobaciones para todos los proyectos funcionales construidos sobre Vespi.
 
 TEMIS no consume el kernel de Vespi, así que su suite no depende de una fijación del kernel. Los otros proyectos funcionales del conjunto de Vespi estaban en rojo el 2026-10-03 porque estaban fijados a un corte anterior del kernel; desde entonces se fijaron al kernel 0.1.5 y sus propias páginas de evidencia informan las nuevas corridas. Nada de eso afecta las 153 pruebas informadas para TEMIS.
 
-### Cómo volver a comprobar una transacción
+## Cómo volver a comprobar una transacción
 
 1. Abre un enlace de hash completo de la lista en Stellar Horizon testnet.
 2. Revisa el hash, si fue exitosa o fallida, el ledger, la cuenta de origen, el tipo y valor del memo y las operaciones que muestra Horizon.

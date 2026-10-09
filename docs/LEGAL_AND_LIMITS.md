@@ -31,9 +31,9 @@ This summary reports what the supplied whitepaper says about Chilean law. It is 
 
 No mainnet issuance or token sale should occur without review by a lawyer. The token document states this condition explicitly; this repository makes no claim that such review has happened.
 
-## Español
+# Español
 
-### Normas chilenas citadas por el whitepaper
+## Normas chilenas citadas por el whitepaper
 
 Este resumen informa lo que el whitepaper suministrado dice sobre la legislación chilena. No es asesoría legal, y el propio whitepaper dice que una persona competente en derecho no ha revisado su sección jurídica. Este repositorio no afirma que TEMIS cumpla una ley ni que un tribunal vaya a admitir como prueba un registro TEMIS.
 
@@ -45,7 +45,7 @@ Este resumen informa lo que el whitepaper suministrado dice sobre la legislació
 
 **Seguros y modelo propuesto para profesionales.** El concepto Not Ponzi describe a una persona abogada que prepara el acuerdo sin cobrar por hora, recibe una parte pequeña si se cumple y asume el costo de defender al cliente si se incumple. En esa propuesta, la persona abogada asume un riesgo; por eso puede decirse que actúa como aseguradora de su cliente. Esto describe el papel económico propuesto para esa persona, no convierte a TEMIS en aseguradora ni impone a TEMIS la obligación de cubrir un incumplimiento. El whitepaper cita el artículo 4 del DFL 251 sobre quién puede desarrollar actividades de seguros en Chile y dice que TEMIS v1 no ofrece cobertura por incumplimiento. Si un arreglo de este tipo califica como seguro, una persona abogada debe revisarlo bajo el DFL 251 antes de ofrecerlo. El repositorio no ofrece seguros, garantiza el cumplimiento ni promete pagar por un incumplimiento.
 
-### Lo que TEMIS no afirma
+## Lo que TEMIS no afirma
 
 - Una firma ed25519 acredita identidad civil, capacidad jurídica, consentimiento libre o calidad de firma electrónica avanzada.
 - Un `MEMO_HASH` de Stellar prueba el contenido o verdad del documento, proporciona un fechado acreditado o le da valor probatorio jurídico automático.
@@ -53,7 +53,7 @@ Este resumen informa lo que el whitepaper suministrado dice sobre la legislació
 - Emitir un token en testnet determina su clasificación conforme a normas de valores, financieras, de consumo, tributarias u otras.
 - El MVP cumple la ley, está listo para producción o fue revisado por un abogado.
 
-### Preguntas jurídicas abiertas
+## Preguntas jurídicas abiertas
 
 - ¿Qué forma de firma, verificación de identidad, consentimiento informado y supervisión profesional sería adecuada para un despliegue real?
 - ¿Qué reglas de retención, eliminación, acceso, corrección y tratamiento aplican a los cuerpos de acuerdos y a la evidencia en cada sector?
