@@ -11,9 +11,7 @@
 </p>
 
 <p align="center"><b>TEMIS</b> — two people sign an agreement and later cannot tell who did what.<br>
-Each party acts only within what it was allowed, and every step is checked and recorded. Evidence: 22/22 states rebuilt from Horizon. Fictional data on Stellar testnet.<br>
-<b>TEMIS</b> — dos personas firman un acuerdo y después no saben quién cumplió qué.<br>
-Cada parte actúa solo dentro de lo permitido, y cada paso se comprueba y queda registrado. Evidencia: 22/22 estados reconstruidos desde Horizon. Datos ficticios en Stellar testnet.</p>
+Each party acts only within what it was allowed, and every step is checked and recorded. Evidence: 22/22 states rebuilt from Horizon. Fictional data on Stellar testnet.</p>
 
 <p align="center"><b>La unidad no es el contrato. La unidad es el hito, y lo que cada parte dejó registrado sobre él.</b></p>
 
@@ -172,6 +170,9 @@ This public repository contains documentation, testnet evidence, token records a
 <summary><b>Leer en español</b></summary>
 
 <a id="espanol"></a>
+
+<p align="center"><b>TEMIS</b> — dos personas firman un acuerdo y después no saben quién cumplió qué.<br>
+Cada parte actúa solo dentro de lo permitido, y cada paso se comprueba y queda registrado. Evidencia: 22/22 estados reconstruidos desde Horizon. Datos ficticios en Stellar testnet.</p>
 
 **Un acuerdo firmado no registra lo que ocurre después. TEMIS hace visible cada hito y permite que un tercero reconstruya el registro.**
 
