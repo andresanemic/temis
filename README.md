@@ -1,6 +1,8 @@
-[![TEMIS, acuerdos verificables por hitos](./assets/cover.png)](./assets/cover.png)
+<p align="center">
+  <a href="./assets/cover.png"><img src="./assets/cover.png" alt="TEMIS: agreements recorded by milestone" width="100%"></a>
+</p>
 
-# TEMIS
+<h1 align="center">TEMIS</h1>
 
 <p align="center">
   <a href="#english"><img src="https://img.shields.io/badge/status-testnet_MVP-D7B698?style=for-the-badge&labelColor=07111A" alt="Status: testnet MVP"></a>
@@ -13,7 +15,13 @@
 <p align="center"><b>TEMIS</b> — two people sign an agreement and later cannot tell who did what.<br>
 Each party acts only within what it was allowed, and every step is checked and recorded. Evidence: 22/22 states rebuilt from Horizon. Fictional data on Stellar testnet.</p>
 
-<p align="center"><b>La unidad no es el contrato. La unidad es el hito, y lo que cada parte dejó registrado sobre él.</b></p>
+
+
+
+<p align="center"><b>We’re applying to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
+<p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./CODE_NOT_INCLUDED.md">Source and review terms</a>.<br>This public snapshot contains documentation and evidence, not runnable source.</p>
+
+---
 
 <details>
 <summary><b>Read in English</b></summary>
@@ -31,16 +39,6 @@ TEMIS is a validation layer for bilateral agreements arranged by milestones. Eac
 Most of the costly work starts after the signatures. One party remembers a request, another has a delivery receipt, and a third file contains the reply. When those records drift apart, reconstructing the sequence takes time and professional attention. A signed or notarized agreement can establish a document, but it does not keep the story of each obligation in one checkable sequence.
 
 TEMIS starts from that gap. It gives an agreement a version, gives each milestone its own recorded path, and distinguishes a mutual confirmation from a one-sided statement. That distinction matters: a cryptographic record can make an account inspectable, but it cannot turn an unanswered claim into a shared fact.
-
-## If you are judging Find Your Way or Meridian, start here
-
-Read the project foundation and its walkthrough. Start with [How it works](./docs/HOW_IT_WORKS.md).
-
-Open the test record. See [Evidence](./docs/EVIDENCE.md).
-
-Read the legal and verification limits. See [Legal and limits](./docs/LEGAL_AND_LIMITS.md).
-
-Review the publication conditions. See [Code not included](./CODE_NOT_INCLUDED.md) and the [review-only license](./LICENSE).
 
 ## In one minute
 
@@ -168,6 +166,8 @@ This public repository contains documentation, testnet evidence, token records a
 
 <details>
 <summary><b>Leer en español</b></summary>
+
+<p align="center"><b>Postulamos a la hackatón Find Your Way y planeamos participar en Meridian.</b></p>
 
 <a id="espanol"></a>
 
