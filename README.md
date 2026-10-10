@@ -18,6 +18,17 @@ Each party acts only within what it was allowed, and every step is checked and r
 <p align="center"><b>We’re applying to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
 <p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./LICENSE">Review-only license</a>.<br>The source is in this repository: run <code>npm test</code> on Node 24.</p>
 
+**Run it / Córrelo**
+
+```bash
+git clone https://github.com/andresanemic/temis.git
+cd temis
+npm ci
+npm test
+```
+
+Node 24. `npm ci` installs the Stellar SDK; `npm test` runs the suite (153 tests). / Node 24. `npm ci` instala el SDK de Stellar; `npm test` ejecuta la suite (153 pruebas).
+
 ---
 
 <details>
