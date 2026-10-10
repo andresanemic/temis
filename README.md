@@ -15,8 +15,6 @@
 <p align="center"><b>TEMIS</b> — two people sign an agreement and later cannot tell who did what.<br>
 Each party acts only within what it was allowed, and every step is checked and recorded. Evidence: 22/22 states rebuilt from Horizon. Fictional data on Stellar testnet.</p>
 
-<p align="center"><a href="#english"><b>Read in English</b></a> · <a href="#espanol"><b>Leer en español</b></a></p>
-
 <p align="center"><b>We’re applying to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
 <p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./CODE_NOT_INCLUDED.md">Source and review terms</a>.<br>This public snapshot contains documentation and evidence, not runnable source.</p>
 
