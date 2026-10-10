@@ -16,7 +16,7 @@
 Each party acts only within what it was allowed, and every step is checked and recorded. Evidence: 22/22 states rebuilt from Horizon. Fictional data on Stellar testnet.</p>
 
 <p align="center"><b>We’re applying to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
-<p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./CODE_NOT_INCLUDED.md">Source and review terms</a>.<br>This public snapshot contains documentation and evidence, not runnable source.</p>
+<p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./LICENSE">Review-only license</a>.<br>The source is in this repository: run <code>npm test</code> on Node 24.</p>
 
 ---
 
@@ -147,7 +147,7 @@ The token study does not establish a market, price, liquidity, investment value 
 
 ## How to review this project
 
-This public repository contains documentation, testnet evidence, token records and a review-only [LICENSE](./LICENSE), not source code. [Code not included](./CODE_NOT_INCLUDED.md) explains the planned opening during the judging period and the conditions for reading and cloning for evaluation. The license is proprietary, is not OSI-approved and remains a working draft for lawyer review.
+This repository contains the source code, documentation, testnet evidence, token records and a review-only [LICENSE](./LICENSE) that permits reading and cloning for evaluation. Run `npm ci && npm test` on Node 24. The license is proprietary, is not OSI-approved and remains a working draft for lawyer review.
 
 ## Author
 
@@ -157,7 +157,7 @@ This public repository contains documentation, testnet evidence, token records a
 
 ---
 
-[How it works](./docs/HOW_IT_WORKS.md) · [Evidence](./docs/EVIDENCE.md) · [Token](./docs/TOKEN.md) · [Legal and limits](./docs/LEGAL_AND_LIMITS.md) · [Code not included](./CODE_NOT_INCLUDED.md) · [Review-only license](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
+[How it works](./docs/HOW_IT_WORKS.md) · [Evidence](./docs/EVIDENCE.md) · [Token](./docs/TOKEN.md) · [Legal and limits](./docs/LEGAL_AND_LIMITS.md) · [Review-only license](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
 
 </details>
 
@@ -186,7 +186,7 @@ Abre el registro de pruebas. Consulta [Evidencia](./docs/EVIDENCE.md).
 
 Lee los límites jurídicos y de verificación. Consulta [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md).
 
-Revisa las condiciones de publicación. Consulta [Código no incluido](./CODE_NOT_INCLUDED.md) y la [licencia de solo revisión](./LICENSE).
+Lee los términos en la [licencia de solo revisión](./LICENSE) y ejecuta `npm test` (Node 24).
 
 ## En un minuto
 
@@ -298,7 +298,7 @@ El estudio del token no demuestra mercado, precio, liquidez, valor de inversión
 
 ## Cómo revisar el proyecto
 
-Este repositorio público contiene documentación, evidencia de testnet y registros del token bajo una [LICENSE](./LICENSE) de solo revisión; no contiene código fuente. [Código no incluido](./CODE_NOT_INCLUDED.md) explica la apertura prevista durante el periodo de evaluación y las condiciones para leer y clonar con ese fin. La licencia es propietaria, no está aprobada por OSI y sigue siendo un borrador de trabajo que debe revisar una persona abogada.
+Este repositorio contiene el código fuente, la documentación, la evidencia de testnet y los registros del token bajo una [LICENSE](./LICENSE) de solo revisión que permite leer y clonar para evaluar. Ejecuta `npm ci && npm test` con Node 24. La licencia es propietaria, no está aprobada por OSI y sigue siendo un borrador de trabajo que debe revisar una persona abogada.
 
 ## Autor
 
@@ -308,6 +308,6 @@ Este repositorio público contiene documentación, evidencia de testnet y regist
 
 ---
 
-[Cómo funciona](./docs/HOW_IT_WORKS.md) · [Evidencia](./docs/EVIDENCE.md) · [Token](./docs/TOKEN.md) · [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) · [Código no incluido](./CODE_NOT_INCLUDED.md) · [Licencia de solo revisión](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
+[Cómo funciona](./docs/HOW_IT_WORKS.md) · [Evidencia](./docs/EVIDENCE.md) · [Token](./docs/TOKEN.md) · [Marco legal y límites](./docs/LEGAL_AND_LIMITS.md) · [Licencia de solo revisión](./LICENSE) · [Vespi](https://github.com/andresanemic/vespi) · [Lore Plugin](https://github.com/andresanemic/lore-plugin)
 
 </details>

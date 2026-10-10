@@ -1,0 +1,442 @@
+{
+  "fecha": "2026-10-06T18:23:08.039Z",
+  "red": "stellar:testnet",
+  "expediente_id": "exp-mux08qnc",
+  "cuenta_ancla": "GDWWBZGPISWYOOKFWXU42MVSSZSXVTTVZW6RMVVFF4GKJ6PXIHOX342H",
+  "cuenta_ajena": "GBLGGBD744UYUO6VPGTNQHAR67YJ6LDH57PNNBLPVUQDUUDVGVB7Z4W2",
+  "anclajes": [
+    {
+      "digest": "c6256f8939f497d54633c4c8fce2c1dacf46568d70ecbb0c0ae4dba78ec60d12",
+      "evento": "acuerdo",
+      "hito": null,
+      "version": 1,
+      "hash": "be5009ddce7b96d29a4cb51f4408a8cd96c8598b92155ce06ec7511646144671",
+      "ledger": 5057458,
+      "nota": null
+    },
+    {
+      "digest": "dca32af20861ae310727c39402e8b961c840665db7e2712ed4c52f3b60e17754",
+      "evento": "hito_abierto",
+      "hito": "h1",
+      "version": 1,
+      "hash": "3b19fdcf72dbb74c340886160d400b6fe71a9c501f2c17b59f748c22de7a5c9e",
+      "ledger": 5057459,
+      "nota": null
+    },
+    {
+      "digest": "24e027444c66e0216e2507f93a278dc84c29add4406bfce09267a33f769dfe51",
+      "evento": "declaracion",
+      "hito": "h1",
+      "version": 1,
+      "hash": "9a59e65b09bf2f45218155b161d564fa54e79f674da55c25328d114b9bf998da",
+      "ledger": 5057460,
+      "nota": null
+    },
+    {
+      "digest": "7e5b090e6e8102e777b3a7c680d99f954d873ca2c062d3c117391b908eed6fa5",
+      "evento": "anulacion",
+      "hito": "h1",
+      "version": 1,
+      "hash": "f5c662707777edc85bf4e444a319bb3dbcec33054da31f14cfecdac425d3c4b0",
+      "ledger": 5057461,
+      "nota": null
+    },
+    {
+      "digest": "2913a2de948fec8cf5a2b35735f51c4bf1488e4788519c3d9dcefee3c5497cf7",
+      "evento": "declaracion",
+      "hito": "h1",
+      "version": 2,
+      "hash": "d35f80c95e24293e434cd8e49f129e07d165faa369a4060f1fe19f73aa982786",
+      "ledger": 5057462,
+      "nota": null
+    },
+    {
+      "digest": "5e4472ee793c9c7c24139c7caab1294cf55a94ee18dce8d25f5bb0fac8fd5d8d",
+      "evento": "contraste",
+      "hito": "h1",
+      "version": 1,
+      "hash": "960c464ea9bb7c37e79aa52e996f184e411237fe7bcaa1d0dc470db82319f524",
+      "ledger": 5057463,
+      "nota": null
+    },
+    {
+      "digest": "f477f346af3b718e3a5f490c71bafdf3bdf0070ab407c084637b78e78f4e4329",
+      "evento": "cierre",
+      "hito": "h1",
+      "version": 1,
+      "hash": "cfd8fb98ea554729a3159307e158f296e14454aa4aa7bb100bbc771ba02aaef9",
+      "ledger": 5057464,
+      "nota": null
+    },
+    {
+      "digest": "d3ed374681cb167d4a5e02cdbbfcb0f3858294a5493740f3342d1c95f50e8551",
+      "evento": "hito_abierto",
+      "hito": "h2",
+      "version": 1,
+      "hash": "c30ac81c161a9da537f308212b6f568a97650c74c7629ad1d9f5e2f11630f4bf",
+      "ledger": 5057465,
+      "nota": null
+    },
+    {
+      "digest": "898753f6b21970f768f3ca73036479539d4f103ee1b3fb4aebd4675169645458",
+      "evento": "declaracion",
+      "hito": "h2",
+      "version": 1,
+      "hash": "b36c7b1b783abfeed622c674752c5b693787fe494f690856710b8092b635a0db",
+      "ledger": 5057466,
+      "nota": null
+    },
+    {
+      "digest": "53d0ec85efca4ef281aad3ac84206f672796a1676d19dbc60c8f0881c8a65e6f",
+      "evento": "cierre",
+      "hito": "h2",
+      "version": 1,
+      "hash": "4aa8f9cfec228ed6fe98107d8246291522dc0828f9a775b9ba75bc63808d5fee",
+      "ledger": 5057467,
+      "nota": null
+    },
+    {
+      "digest": "de4977dc59dea2a66e1b74a4f55ec2d217eb13e5361915b5e2a62c2e66dc9bc2",
+      "evento": "hito_abierto",
+      "hito": "h3",
+      "version": 1,
+      "hash": "46cc3cbb403d45e01be74bc8cd44a8b1c205d5c3f0f2750612ccc50b8a2f348b",
+      "ledger": 5057468,
+      "nota": null
+    },
+    {
+      "digest": "b849c0e1d4c951097b20b8bdb2fddb0e38cb0db4db6d061efe819eb15158ae21",
+      "evento": "declaracion",
+      "hito": "h3",
+      "version": 1,
+      "hash": "69d9e94c6a51655ad1e16477288120adc4fb14fe859b37827032563ab78515d3",
+      "ledger": 5057469,
+      "nota": null
+    },
+    {
+      "digest": "aeef3e3bf6d51eb324375da73316e3fd006673db243a4858539323e343df8ec2",
+      "evento": "declaracion",
+      "hito": "h3",
+      "version": 1,
+      "hash": "a958aa37f7dff14ec87234e2a04b2e0cfce784c39a93f52891af2bc59e29e1a2",
+      "ledger": 5057470,
+      "nota": "perdedora esperada"
+    },
+    {
+      "digest": "7ca164d841c7f5bf695b50e2fb3acceab68cf9cef4fe1bafecb4060a9d9e5df3",
+      "evento": "contraste",
+      "hito": "h3",
+      "version": 1,
+      "hash": "bcff781b0cc4d99f3e1797c413e7396288376188d38c1dd9def3c55d0462308e",
+      "ledger": 5057471,
+      "nota": null
+    },
+    {
+      "digest": "27fe2f02a7e969edde5317371fd2743aaca794da75bfed9e5f20b60d63e5900f",
+      "evento": "controversia",
+      "hito": null,
+      "version": 1,
+      "hash": "c5578cac4a39892fb1c6c26379edf651cf684560c6124ba2f2174a6cdc2542bb",
+      "ledger": 5057472,
+      "nota": null
+    },
+    {
+      "digest": "8cfb65a38fecacfb5ede43f94885e9e0fe5d9535ddb312d9cfaac0c653dfa7d0",
+      "evento": "hito_abierto",
+      "hito": "h4",
+      "version": 1,
+      "hash": "92b7454a516c19a423e20917b1b19cc28a8fd7615941e7100a3b7a6ad397a6e9",
+      "ledger": 5057473,
+      "nota": "cuenta_no_autorizada esperada"
+    },
+    {
+      "digest": "ccf1b60c199bd37f64176d44d42a5db67f906e4a1ab6ed31bf133375e1014f1b",
+      "evento": "declaracion",
+      "hito": "h3",
+      "version": 2,
+      "hash": "0dcca52d666aba6d1c0c4bf302803b7fe2b34477f1297db6f9a5f5bfd15c7b95",
+      "ledger": 5057474,
+      "nota": "firmas_insuficientes esperada"
+    },
+    {
+      "digest": "b259a322f3298373c202913c73fc4ab8b118dd217625d7034dc50f25bddd603e",
+      "evento": "anulacion",
+      "hito": "h3",
+      "version": 1,
+      "hash": "647a3475a9a3a457c9d8ef023bd6a65234e39d72d5ddc1411fd2c853a5e2ea11",
+      "ledger": 5057475,
+      "nota": "anulacion_no_valida esperada"
+    },
+    {
+      "digest": "23d20064e20319de2e3364d9f322807b54f0b293c1ce456ed8606323dbf6d20a",
+      "evento": "hito_abierto",
+      "hito": "h5",
+      "version": 1,
+      "hash": "35e2083787b6ee32b531d5aa5fbecf9aaf8c0f9fcd2e50116b764cb047066737",
+      "ledger": 5057476,
+      "nota": "fuera_de_cadena esperada"
+    },
+    {
+      "digest": "461097eaaeae4c4b51802f2408e59322a2d98d369f767b15cc9ce7aa7ba3d1e3",
+      "evento": "hito_abierto",
+      "hito": "h6",
+      "version": 1,
+      "hash": "a4cf2381659b9994fba21d8cc30b0424cf5b110bf30be0a6d8a6201e56006a7e",
+      "ledger": 5057477,
+      "nota": "sin_cuerpo esperada"
+    },
+    {
+      "digest": "a424dfac18ff78fa59f285a8718157afe6fd3730c52568fe84f5b0687e6de0af",
+      "evento": "cierre",
+      "hito": "h3",
+      "version": 2,
+      "hash": "e4fe585240e5881c0b661328d24d669c8997e4bd4fec3ae8db751bc3d72bbc3b",
+      "ledger": 5057478,
+      "nota": "cierre_sin_respaldo esperada"
+    },
+    {
+      "digest": "4ea76e4f348b88edc6eda98253367640b4b5b6b612ed3522657dbe5d226f4e57",
+      "evento": "contraste",
+      "hito": "h1",
+      "version": 2,
+      "hash": "1eb1254e832cac0ece5f34da0417890d55a9fd23e131e36f1fb7e06fd9261698",
+      "ledger": 5057479,
+      "nota": "contraste_sin_objetivo esperada"
+    },
+    {
+      "digest": "7b15e663f9118f7ef9b1b39b00e2cb6556e44259c2369b1e352acad292a62e69",
+      "evento": "hito_abierto",
+      "hito": "h7",
+      "version": 1,
+      "hash": "fc6f237649b61e778e44fca40e0933f03f334c56de2fe6214b554c2b1344c4ea",
+      "ledger": 5057480,
+      "nota": "digest_no_coincide esperada"
+    }
+  ],
+  "estados": {
+    "exp-mux08qnc": {
+      "estado": "acordado",
+      "partes": [
+        {
+          "id": "alice",
+          "clave_publica": "db714013f37d00e89e7b77345e523c9a03ea7bc8bdd6d53d48bd8c4d6e53a150"
+        },
+        {
+          "id": "bob",
+          "clave_publica": "2047b67e9ba43af7aea778d259a6eaef78b7ddbfeb1346a5e579ba95416b288e"
+        }
+      ],
+      "operador": "ad1eeb089b1177dcf689523203133462a466695322f107b312844fbb9ed97e4b",
+      "hitos": {
+        "h1": {
+          "estado": "cumplido"
+        },
+        "h2": {
+          "estado": "cumplido_no_confirmado"
+        },
+        "h3": {
+          "estado": "impugnado"
+        }
+      }
+    }
+  },
+  "estatus_de_lineas": [
+    {
+      "evento": "acuerdo",
+      "hito": null,
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "be5009ddce7b96d29a4cb51f4408a8cd96c8598b92155ce06ec7511646144671",
+      "ledger": 5057458
+    },
+    {
+      "evento": "hito_abierto",
+      "hito": "h1",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "3b19fdcf72dbb74c340886160d400b6fe71a9c501f2c17b59f748c22de7a5c9e",
+      "ledger": 5057459
+    },
+    {
+      "evento": "declaracion",
+      "hito": "h1",
+      "nota": null,
+      "estatus": "anulada",
+      "hash": "9a59e65b09bf2f45218155b161d564fa54e79f674da55c25328d114b9bf998da",
+      "ledger": 5057460
+    },
+    {
+      "evento": "anulacion",
+      "hito": "h1",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "f5c662707777edc85bf4e444a319bb3dbcec33054da31f14cfecdac425d3c4b0",
+      "ledger": 5057461
+    },
+    {
+      "evento": "declaracion",
+      "hito": "h1",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "d35f80c95e24293e434cd8e49f129e07d165faa369a4060f1fe19f73aa982786",
+      "ledger": 5057462
+    },
+    {
+      "evento": "contraste",
+      "hito": "h1",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "960c464ea9bb7c37e79aa52e996f184e411237fe7bcaa1d0dc470db82319f524",
+      "ledger": 5057463
+    },
+    {
+      "evento": "cierre",
+      "hito": "h1",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "cfd8fb98ea554729a3159307e158f296e14454aa4aa7bb100bbc771ba02aaef9",
+      "ledger": 5057464
+    },
+    {
+      "evento": "hito_abierto",
+      "hito": "h2",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "c30ac81c161a9da537f308212b6f568a97650c74c7629ad1d9f5e2f11630f4bf",
+      "ledger": 5057465
+    },
+    {
+      "evento": "declaracion",
+      "hito": "h2",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "b36c7b1b783abfeed622c674752c5b693787fe494f690856710b8092b635a0db",
+      "ledger": 5057466
+    },
+    {
+      "evento": "cierre",
+      "hito": "h2",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "4aa8f9cfec228ed6fe98107d8246291522dc0828f9a775b9ba75bc63808d5fee",
+      "ledger": 5057467
+    },
+    {
+      "evento": "hito_abierto",
+      "hito": "h3",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "46cc3cbb403d45e01be74bc8cd44a8b1c205d5c3f0f2750612ccc50b8a2f348b",
+      "ledger": 5057468
+    },
+    {
+      "evento": "declaracion",
+      "hito": "h3",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "69d9e94c6a51655ad1e16477288120adc4fb14fe859b37827032563ab78515d3",
+      "ledger": 5057469
+    },
+    {
+      "evento": "declaracion",
+      "hito": "h3",
+      "nota": "perdedora esperada",
+      "estatus": "perdedora",
+      "hash": "a958aa37f7dff14ec87234e2a04b2e0cfce784c39a93f52891af2bc59e29e1a2",
+      "ledger": 5057470
+    },
+    {
+      "evento": "contraste",
+      "hito": "h3",
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "bcff781b0cc4d99f3e1797c413e7396288376188d38c1dd9def3c55d0462308e",
+      "ledger": 5057471
+    },
+    {
+      "evento": "controversia",
+      "hito": null,
+      "nota": null,
+      "estatus": "vigente",
+      "hash": "c5578cac4a39892fb1c6c26379edf651cf684560c6124ba2f2174a6cdc2542bb",
+      "ledger": 5057472
+    },
+    {
+      "evento": "hito_abierto",
+      "hito": "h4",
+      "nota": "cuenta_no_autorizada esperada",
+      "estatus": "cuenta_no_autorizada",
+      "hash": "92b7454a516c19a423e20917b1b19cc28a8fd7615941e7100a3b7a6ad397a6e9",
+      "ledger": 5057473
+    },
+    {
+      "evento": "declaracion",
+      "hito": "h3",
+      "nota": "firmas_insuficientes esperada",
+      "estatus": "firmas_insuficientes",
+      "hash": "0dcca52d666aba6d1c0c4bf302803b7fe2b34477f1297db6f9a5f5bfd15c7b95",
+      "ledger": 5057474
+    },
+    {
+      "evento": "anulacion",
+      "hito": "h3",
+      "nota": "anulacion_no_valida esperada",
+      "estatus": "anulacion_no_valida",
+      "hash": "647a3475a9a3a457c9d8ef023bd6a65234e39d72d5ddc1411fd2c853a5e2ea11",
+      "ledger": 5057475
+    },
+    {
+      "evento": "hito_abierto",
+      "hito": "h5",
+      "nota": "fuera_de_cadena esperada",
+      "estatus": "fuera_de_cadena",
+      "hash": "35e2083787b6ee32b531d5aa5fbecf9aaf8c0f9fcd2e50116b764cb047066737",
+      "ledger": 5057476
+    },
+    {
+      "evento": "hito_abierto",
+      "hito": "h6",
+      "nota": "sin_cuerpo esperada",
+      "estatus": "sin_cuerpo",
+      "hash": "a4cf2381659b9994fba21d8cc30b0424cf5b110bf30be0a6d8a6201e56006a7e",
+      "ledger": 5057477
+    },
+    {
+      "evento": "cierre",
+      "hito": "h3",
+      "nota": "cierre_sin_respaldo esperada",
+      "estatus": "cierre_sin_respaldo",
+      "hash": "e4fe585240e5881c0b661328d24d669c8997e4bd4fec3ae8db751bc3d72bbc3b",
+      "ledger": 5057478
+    },
+    {
+      "evento": "contraste",
+      "hito": "h1",
+      "nota": "contraste_sin_objetivo esperada",
+      "estatus": "contraste_sin_objetivo",
+      "hash": "1eb1254e832cac0ece5f34da0417890d55a9fd23e131e36f1fb7e06fd9261698",
+      "ledger": 5057479
+    },
+    {
+      "evento": "hito_abierto",
+      "hito": "h7",
+      "nota": "digest_no_coincide esperada",
+      "estatus": "digest_no_coincide",
+      "hash": "fc6f237649b61e778e44fca40e0933f03f334c56de2fe6214b554c2b1344c4ea",
+      "ledger": 5057480
+    }
+  ],
+  "cotejo_con_la_copia": {
+    "coincide": false,
+    "diferencias": [
+      {
+        "digest": "461097eaaeae4c4b51802f2408e59322a2d98d369f767b15cc9ce7aa7ba3d1e3",
+        "tipo": "falta_en_la_copia"
+      },
+      {
+        "digest": "7b15e663f9118f7ef9b1b39b00e2cb6556e44259c2369b1e352acad292a62e69",
+        "tipo": "cuerpo_alterado"
+      }
+    ]
+  }
+}

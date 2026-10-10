@@ -1,0 +1,131 @@
+{
+  "forma": "TEMIS-CF-1",
+  "positivos": [
+    {
+      "nombre": "V1 basico: claves en orden inverso, entero negativo, booleano, null, arreglo anidado, escapes",
+      "texto": "{\"zeta\":[3,{\"b\":true,\"a\":null}],\"alfa\":-12,\"mid\":\"x\\ty\\\"z\\\\\"}",
+      "canonico": "{\"alfa\":-12,\"mid\":\"x\\ty\\\"z\\\\\",\"zeta\":[3,{\"a\":null,\"b\":true}]}",
+      "canonicoHex": "7b22616c6661223a2d31322c226d6964223a22785c74795c227a5c5c222c227a657461223a5b332c7b2261223a6e756c6c2c2262223a747275657d5d7d",
+      "digest": "e3ba3bd5e01f9a99c212de68064a2fa8bfa93ed0e44ded3fd48d8dadfdbedec0"
+    },
+    {
+      "nombre": "V2 discriminante: NFD frente a NFC, y orden por bytes UTF-8 frente a unidades UTF-16 (U+E000 antes que U+10000)",
+      "texto": "{\"\\uE000\":1,\"\\ud800\\udc00\":2,\"cafe\\u0301\":3}",
+      "canonico": "{\"café\":3,\"\":1,\"𐀀\":2}",
+      "canonicoHex": "7b22636166c3a9223a332c22ee8080223a312c22f0908080223a327d",
+      "digest": "09c66393713974344057e8733f8b5f3cfbd56a9eb26ce147bad975b61dcb4001"
+    },
+    {
+      "nombre": "V3 limites int64 y espacios de entrada que se descartan",
+      "texto": " { \"max\" : 9223372036854775807 , \"min\" : -9223372036854775808 , \"cero\" : 0 } ",
+      "canonico": "{\"cero\":0,\"max\":9223372036854775807,\"min\":-9223372036854775808}",
+      "canonicoHex": "7b226365726f223a302c226d6178223a393232333337323033363835343737353830372c226d696e223a2d393232333337323033363835343737353830387d",
+      "digest": "d4a1248b5cf90ab59c5cb427039ec0fcbb1cffa70345b67a55e12ea3aa9082a2"
+    },
+    {
+      "nombre": "V4 escapes de control y solidus: u0001 en minuscula, solidus de entrada sin escapar a la salida, DEL y U+2028 literales",
+      "texto": "{\"a\":\"\\u0001\\/\\u007f\\u2028\"}",
+      "canonico": "{\"a\":\"\\u0001/ \"}",
+      "canonicoHex": "7b2261223a225c75303030312f7fe280a8227d",
+      "digest": "6412633ec63c798a79a7985f7aad597005c9e73069987a766067e67e18046c24"
+    }
+  ],
+  "negativos": [
+    {
+      "nombre": "clave duplicada",
+      "texto": "{\"a\":1,\"a\":2}"
+    },
+    {
+      "nombre": "clave duplicada tras NFC",
+      "texto": "{\"\\u00e9\":1,\"e\\u0301\":2}"
+    },
+    {
+      "nombre": "fraccion",
+      "texto": "{\"a\":1.5}"
+    },
+    {
+      "nombre": "uno punto cero",
+      "texto": "{\"a\":1.0}"
+    },
+    {
+      "nombre": "exponente minuscula",
+      "texto": "{\"a\":1e3}"
+    },
+    {
+      "nombre": "exponente mayuscula",
+      "texto": "{\"a\":1E3}"
+    },
+    {
+      "nombre": "menos cero",
+      "texto": "{\"a\":-0}"
+    },
+    {
+      "nombre": "mas explicito",
+      "texto": "{\"a\":+1}"
+    },
+    {
+      "nombre": "cero a la izquierda",
+      "texto": "{\"a\":01}"
+    },
+    {
+      "nombre": "NaN",
+      "texto": "{\"a\":NaN}"
+    },
+    {
+      "nombre": "Infinity",
+      "texto": "{\"a\":Infinity}"
+    },
+    {
+      "nombre": "sustituto suelto alto",
+      "texto": "{\"a\":\"\\ud800\"}"
+    },
+    {
+      "nombre": "sustituto suelto bajo",
+      "texto": "{\"a\":\"\\udc00\"}"
+    },
+    {
+      "nombre": "punto de codigo sin asignar U+0378",
+      "texto": "{\"a\":\"\\u0378\"}"
+    },
+    {
+      "nombre": "entero sobre int64",
+      "texto": "{\"a\":9223372036854775808}"
+    },
+    {
+      "nombre": "entero bajo int64",
+      "texto": "{\"a\":-9223372036854775809}"
+    },
+    {
+      "nombre": "coma final en objeto",
+      "texto": "{\"a\":1,}"
+    },
+    {
+      "nombre": "coma final en arreglo",
+      "texto": "[1,2,]"
+    },
+    {
+      "nombre": "texto sobrante",
+      "texto": "{\"a\":1} x"
+    },
+    {
+      "nombre": "control sin escapar en cadena (tabulador crudo)",
+      "texto": "{\"a\":\"x\ty\"}"
+    },
+    {
+      "nombre": "BOM al inicio",
+      "texto": "﻿{\"a\":1}"
+    },
+    {
+      "nombre": "comentario",
+      "texto": "{\"a\":1 /* c */}"
+    },
+    {
+      "nombre": "comillas simples",
+      "texto": "{'a':1}"
+    },
+    {
+      "nombre": "vacio",
+      "texto": ""
+    }
+  ]
+}

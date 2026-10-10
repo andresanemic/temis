@@ -1,0 +1,30 @@
+{
+  "red": "testnet",
+  "code": "TEMIS",
+  "issuer": "issuer",
+  "totalStroops": "1000000000000000",
+  "supplyModel": "fixed",
+  "flags": {
+    "authRequired": false,
+    "authRevocable": false,
+    "authImmutable": false,
+    "clawbackEnabled": false
+  },
+  "buckets": {
+    "distribuidora": { "porcentaje": 0, "cuenta": "distribuidora" },
+    "tesoreria": { "porcentaje": 25, "cuenta": "tesoreria" },
+    "ecosistema": { "porcentaje": 35, "cuenta": "ecosistema" },
+    "liquidez": { "porcentaje": 10, "cuenta": "liquidez" },
+    "asesores": { "porcentaje": 10, "cuenta": "asesores" },
+    "contingencia": { "porcentaje": 5, "cuenta": "contingencia" },
+    "fundadores": { "porcentaje": 15, "fundadores": { "andres": 50, "francisco": 50 } }
+  },
+  "vesting": {
+    "inicio": "2026-10-03T00:00:00.000Z",
+    "cliffMeses": 12,
+    "tramos": 36,
+    "respaldoDias": 180,
+    "demoMinutos": 4,
+    "demoDesde": "liquidez"
+  }
+}

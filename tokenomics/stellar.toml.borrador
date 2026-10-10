@@ -1,0 +1,22 @@
+# Borrador SEP-1. No publicar ni hospedar este archivo.
+# Activo de prueba sin valor, solo testnet.
+NETWORK_PASSPHRASE = "Test SDF Network ; September 2015"
+ACCOUNTS = ["<EMISOR>"]
+VERSION = "2.0.0"
+
+[DOCUMENTATION]
+ORG_NAME = "TEMIS"
+ORG_URL = "https://<DOMINIO>"
+ORG_DESCRIPTION = "Activo de prueba sin valor, solo testnet."
+ORG_OFFICIAL_EMAIL = "<CONTACTO>"
+
+[[CURRENCIES]]
+code = "TEMIS"
+issuer = "<EMISOR>"
+name = "TEMIS testnet"
+desc = "Activo de prueba sin valor, solo testnet. No representa precio, liquidez, venta ni promesa."
+conditions = "Experimento de mecánica en testnet. Sin precio, liquidez, venta ni promesas."
+display_decimals = 7
+fixed_number = 100000000
+is_asset_anchored = false
+status = "test"
