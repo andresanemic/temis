@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#english"><img src="https://img.shields.io/badge/status-testnet_MVP-D7B698?style=for-the-badge&labelColor=07111A" alt="Status: testnet MVP"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-review--only-D7B698?style=for-the-badge&labelColor=07111A" alt="License: review only"></a>
-  <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-153_tests-D7B698?style=for-the-badge&labelColor=07111A" alt="Suite: 153 tests"></a>
+  <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-153_of_153_pass-D7B698?style=for-the-badge&labelColor=07111A" alt="Suite: 153 of 153 tests pass"></a>
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/testnet-evidence_open-E0C170?style=for-the-badge&labelColor=07111A" alt="Testnet evidence open"></a>
   <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/built_with-Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Lore Plugin"></a>
 </p>
@@ -15,8 +15,7 @@
 <p align="center"><b>TEMIS</b> — two people sign an agreement and later cannot tell who did what.<br>
 Each party acts only within what it was allowed, and every step is checked and recorded. Evidence: 22/22 states rebuilt from Horizon. Fictional data on Stellar testnet.</p>
 
-
-
+<p align="center"><a href="#english"><b>Read in English</b></a> · <a href="#espanol"><b>Leer en español</b></a></p>
 
 <p align="center"><b>We’re applying to the Find Your Way hackathon and plan to participate in Meridian.</b></p>
 <p align="center"><b>For judges:</b> <a href="./docs/HOW_IT_WORKS.md">How it works</a> · <a href="./docs/EVIDENCE.md">Evidence</a> · <a href="./docs/LEGAL_AND_LIMITS.md">Limits</a> · <a href="./CODE_NOT_INCLUDED.md">Source and review terms</a>.<br>This public snapshot contains documentation and evidence, not runnable source.</p>
