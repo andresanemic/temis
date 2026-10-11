@@ -125,7 +125,7 @@ A notarized document and a milestone record answer different questions. TEMIS fo
 | Legal professional | Prepares or reviews the agreement and its milestones | The professional named in the agreement record | TEMIS does not replace legal work |
 | TEMIS operator | Coordinates recording and anchors line digests | The anchor account's public write sequence | The operator is not a judge; one anchor account creates a key and trust risk |
 | Technical verifier or provider | Compares supplied material or delivers a bounded paid capability | A match or mismatch for the supplied inputs and the related payment reference | It cannot certify truth, legal sufficiency or provider quality |
-| Independent reviewer | Rebuilds the sequence from public history and compares a party copy | Whether the supplied record agrees with the rebuilt sequence | Needs the complete history, specification and copy |
+| Independent reviewer | Rebuilds the sequence from public history and compares a party copy | Whether the recorded record agrees with the rebuilt sequence | Needs the complete history, specification and copy |
 
 The record format and payment flow are described in [How it works](./docs/HOW_IT_WORKS.md). An anchor proves that a digest appeared in a ledger transaction; it does not reveal the agreement body or verify its assertions.
 
@@ -322,7 +322,7 @@ Este repositorio contiene el código fuente, la documentación, la evidencia de 
 
 ## Autor
 
-**Andrés Peña Mellado**, Digital Art Director & Creative Developer working across AI agents, Web3, design and research. Repository authority: `andresanemic`.
+**Andrés Peña Mellado**, director de arte digital y creative developer que trabaja con agentes de IA, Web3, diseño e investigación. Autoridad del repositorio: `andresanemic`.
 
 [<img src="./assets/icons/v2/telegram.svg" width="28" alt="Telegram">](https://t.me/andresanemic) &nbsp;&nbsp; [<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/v2/x-dark.svg"><img src="./assets/icons/v2/x.svg" width="28" alt="X"></picture>](https://x.com/andresanemic) &nbsp;&nbsp; [<img src="./assets/icons/v2/linkedin.svg" width="28" alt="LinkedIn">](https://www.linkedin.com/in/andresanemic/)
 
