@@ -1,7 +1,7 @@
 {
   "name": "temis",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "TEMIS: capa de validacion legal para acuerdos bilaterales por hitos (MVP en testnet, datos sinteticos).",
   "license": "UNLICENSED",
   "engines": {

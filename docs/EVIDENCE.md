@@ -209,7 +209,7 @@ The 153-test count is the final suite count reported in the supplied Stage 5 rec
 
 TEMIS's latest supplied receipt reports 153 tests and zero failures. This count is the TEMIS project suite; it must not be read as a combined pass count for all functional projects built on Vespi.
 
-TEMIS does not consume the Vespi kernel, so its suite does not depend on a kernel pin. The other functional projects of the Vespi set were red on 2026-10-03 because they were pinned to an earlier kernel cut; they have since been re-pinned to kernel 0.1.5 and their own evidence pages report the new runs. None of that affects the 153 reported tests of TEMIS.
+TEMIS does not consume the Vespi kernel, so its suite does not depend on a kernel pin. The other functional projects of the Vespi set were red on 2026-10-03 because they were pinned to an earlier kernel cut; they have since been re-pinned to kernel 0.1.6 and their own evidence pages report the new runs. None of that affects the 153 reported tests of TEMIS.
 
 ## How to recheck a transaction
 
@@ -265,7 +265,7 @@ La cifra de 153 pruebas es la última cifra de suite que informa el recibo del t
 
 El recibo más reciente suministrado para TEMIS informa 153 pruebas y cero fallas. Esta cifra corresponde a la suite del proyecto TEMIS; no debe leerse como un total combinado de aprobaciones para todos los proyectos funcionales construidos sobre Vespi.
 
-TEMIS no consume el kernel de Vespi, así que su suite no depende de una fijación del kernel. Los otros proyectos funcionales del conjunto de Vespi estaban en rojo el 2026-10-03 porque estaban fijados a un corte anterior del kernel; desde entonces se fijaron al kernel 0.1.5 y sus propias páginas de evidencia informan las nuevas corridas. Nada de eso afecta las 153 pruebas informadas para TEMIS.
+TEMIS no consume el kernel de Vespi, así que su suite no depende de una fijación del kernel. Los otros proyectos funcionales del conjunto de Vespi estaban en rojo el 2026-10-03 porque estaban fijados a un corte anterior del kernel; desde entonces se fijaron al kernel 0.1.6 y sus propias páginas de evidencia informan las nuevas corridas. Nada de eso afecta las 153 pruebas informadas para TEMIS.
 
 ## Cómo volver a comprobar una transacción
 
