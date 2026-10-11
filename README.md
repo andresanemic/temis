@@ -145,7 +145,7 @@ The testnet receipts also record a muxed `payTo` rejected at `/verify`, a compar
 
 TEMIS grows from the Not Ponzi concept: the lawyer prepares an agreement without hourly billing, receives a small percentage if it is fulfilled and assumes the cost of defending the client if it is breached. In that proposed arrangement, the lawyer behaves like the client's insurer by taking on risk. TEMIS itself is not an insurer and does not promise coverage. If an arrangement like this qualifies as insurance under Chile's DFL 251, a lawyer must review it. The public material is not a legal opinion.
 
-The product direction is a marketplace, a “Tinder for lawyers”: people and lawyers would match, agree on services and pay. That marketplace has not been built. $TEMIS is a testnet proof of concept for one possible payment method; USDC or XLM could also be used. The testnet asset has no price, sale, liquidity or promised value. RUC-D puts tokenomics last, after institutional relations, resources, actors and rights, rules, verification and architecture. See [Token](./docs/TOKEN.md).
+The product direction is a marketplace, a “Tinder for lawyers”: people and lawyers would match, agree on services and pay. That marketplace has not been built. $TEMIS is a testnet proof of concept for one possible payment method; USDC or XLM could also be used. The testnet asset has no price, sale, liquidity or promised value. The method puts tokenomics last, after institutional relations, resources, actors and rights, rules, verification and architecture. See [Token](./docs/TOKEN.md).
 
 ## TEMIS, Vespi and Lore Plugin
 
@@ -301,7 +301,7 @@ Los recibos de testnet también registran el rechazo de un `payTo` multiplexado 
 
 TEMIS nace del concepto Not Ponzi: la persona abogada prepara un acuerdo sin cobrar por hora, recibe un porcentaje pequeño si se cumple y asume el costo de la defensa si se incumple. En ese modelo propuesto, la persona abogada actúa como aseguradora de su cliente al asumir el riesgo. TEMIS en sí no es una aseguradora ni promete cobertura. Si un arreglo de este tipo califica como seguro bajo el DFL 251 de Chile, lo debe revisar una persona abogada. El material público no constituye una opinión jurídica.
 
-La dirección del producto es un marketplace, un «Tinder de abogados»: las personas y quienes ejercen la abogacía podrían emparejarse, acordar servicios y pagar. Ese marketplace no está construido. $TEMIS es una prueba de concepto en testnet para un posible medio de pago; también se podría usar USDC o XLM. El activo de testnet no tiene precio, venta, liquidez ni promesa de valor. RUC-D deja la tokenomics al final, después de las relaciones institucionales, los recursos, actores y derechos, las reglas, la verificación y la arquitectura. Consulta [Token](./docs/TOKEN.md).
+La dirección del producto es un marketplace, un «Tinder de abogados»: las personas y quienes ejercen la abogacía podrían emparejarse, acordar servicios y pagar. Ese marketplace no está construido. $TEMIS es una prueba de concepto en testnet para un posible medio de pago; también se podría usar USDC o XLM. El activo de testnet no tiene precio, venta, liquidez ni promesa de valor. El método deja la tokenomics al final, después de las relaciones institucionales, los recursos, actores y derechos, las reglas, la verificación y la arquitectura. Consulta [Token](./docs/TOKEN.md).
 
 ## TEMIS, Vespi y Lore Plugin
 
