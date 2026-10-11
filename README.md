@@ -152,6 +152,9 @@ The product direction is a marketplace, a “Tinder for lawyers”: people and l
 
 ## What is not built or verified
 
+Review status: this project has not been audited.
+
+
 There is no mainnet operation, live legal service, lawyer marketplace, market demand study, multi-facilitator operation or production readiness claim. The reconstruction covers one run; it did not verify the authenticity of Stellar transaction signatures. The testnet proof does not cover the case where service delivery succeeds and settlement then fails, and the testnet scenarios for `uncertain` and `conflict` are not substitutes for every timing race. The independent evidence and remaining cases are listed in [Evidence](./docs/EVIDENCE.md).
 
 The token study does not establish a market, price, liquidity, investment value or legal classification. The Chilean legal analysis has not been reviewed by a competent lawyer. See [Legal and limits](./docs/LEGAL_AND_LIMITS.md).
@@ -304,6 +307,9 @@ La dirección del producto es un marketplace, un «Tinder de abogados»: las per
 [Lore Plugin](https://github.com/andresanemic/lore-plugin) aporta el criterio del proyecto y el método del coordinador; TEMIS se construyó con ese método, y su acuerdo y su criterio viven en el proyecto. TEMIS **no** corre sobre el kernel de [Vespi](https://github.com/andresanemic/vespi): su registro de solo anexado, las firmas, la forma canónica TEMIS-CF-1, los estados de hitos y los anclajes en Stellar testnet son código propio de TEMIS, y su fuente lo dice. El kernel se leyó como referencia de diseño (las notas del paso cero del proyecto lo citan con archivo y línea), y TEMIS usa los mismos paquetes públicos de x402 que usa el puente de referencia x402 de Vespi; ninguna de las dos cosas hace de TEMIS un consumidor de las operaciones, la autoridad o los recibos del kernel. Si TEMIS debe consumir los recibos del kernel y sus anclas pubnet pendientes es una decisión abierta que la suite actual no ejercita.
 
 ## Qué no está construido ni verificado
+
+Estado de revisión: este proyecto no ha sido auditado.
+
 
 No hay operación en mainnet, servicio jurídico en vivo, marketplace de abogados, estudio de demanda, operación con varios facilitadores ni afirmación de preparación para producción. La reconstrucción cubre una corrida y no verificó la autenticidad de las firmas de las transacciones de Stellar. La prueba de testnet no cubre el caso en que se entrega el servicio y luego falla la liquidación; las pruebas locales de `uncertain` y `conflict` tampoco representan todas las carreras temporales. La evidencia y los casos pendientes están en [Evidencia](./docs/EVIDENCE.md).
 
