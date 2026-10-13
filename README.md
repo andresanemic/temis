@@ -10,7 +10,8 @@
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-153_of_153_pass-D7B698?style=for-the-badge&labelColor=07111A" alt="Suite: 153 of 153 tests pass"></a> <b>It worked.</b>
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/testnet-evidence_open-E0C170?style=for-the-badge&labelColor=07111A" alt="Testnet evidence open"></a>
   <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/built_with-Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Lore Plugin"></a>
-  <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/Lore_Plugin-4057%2B_recorded_clones-E0C170?style=for-the-badge&labelColor=07111A" alt="4,057+ recorded clones of Lore Plugin since launch (through 2026-10-10)"></a>
+  <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/Lore_Plugin-4415%2B_recorded_clones-E0C170?style=for-the-badge&labelColor=07111A" alt="4,415+ recorded clones of Lore Plugin since launch (through 2026-10-12)"></a>
+  <a href="./data/traffic/source-2026-10-13.json"><img src="https://img.shields.io/badge/clones-279_in_14_days-E0C170?style=for-the-badge&labelColor=07111A" alt="temis: 279 GitHub clone events, 2026-09-29 to 2026-10-12 UTC"></a>
 </p>
 
 <p align="center"><b>TEMIS</b> — two people sign an agreement and later cannot tell who did what.<br>
