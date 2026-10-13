@@ -29,6 +29,8 @@ npm test
 
 Node 24. `npm ci` installs the Stellar SDK; `npm test` runs the suite (153 tests). / Node 24. `npm ci` instala el SDK de Stellar; `npm test` ejecuta la suite (153 pruebas).
 
+These projects remain separate, runnable repositories. **Vespi Desktop** is the planned workspace for the kit and kernel, with **Hive as its creation studio**; this project is not yet integrated into an installable Desktop app. / Estos proyectos siguen siendo repositorios ejecutables por separado. **Vespi Desktop** será el espacio de trabajo del kit y el kernel, con **Hive como taller de creación**; este proyecto aún no está integrado en una app Desktop instalable.
+
 ---
 
 <details>
