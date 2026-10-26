@@ -9,7 +9,7 @@
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/suite-153_of_153_pass-D7B698?style=for-the-badge&labelColor=07111A" alt="Suite: 153 of 153 tests pass"></a>
   <a href="./docs/EVIDENCE.md"><img src="https://img.shields.io/badge/testnet-evidence_open-E0C170?style=for-the-badge&labelColor=07111A" alt="Testnet evidence open"></a>
   <a href="https://github.com/andresanemic/lore-plugin"><img src="https://img.shields.io/badge/built_with-Lore_Plugin-E0C170?style=for-the-badge&labelColor=07111A" alt="Built with Lore Plugin"></a>
-  <a href="./data/traffic/source-2026-10-13.json"><img src="https://img.shields.io/badge/clones-279_in_14_days-E0C170?style=for-the-badge&labelColor=07111A" alt="temis: 279 GitHub clone events, 2026-09-29 to 2026-10-12 UTC"></a>
+  <a href="./data/traffic/clones.json"><img src="https://img.shields.io/badge/clones-394_in_27_days-E0C170?style=for-the-badge&labelColor=07111A" alt="temis: 394 GitHub clone events, 2026-09-29 to 2026-10-25 UTC (clones, not unique people)"></a>
 </p>
 
 <p align="center"><b>TEMIS</b> — two people sign an agreement and later cannot tell who did what.<br>
